@@ -869,7 +869,7 @@ async function errorHandler(error, event) {
 }
 
 const appConfig = {"name":"vinxi","routers":[{"name":"public","type":"static","base":"/","dir":"./public","root":"/home/node/.openclaw/workspace/cockbrothers/apps/frontend","order":0,"outDir":"/home/node/.openclaw/workspace/cockbrothers/apps/frontend/.vinxi/build/public"},{"name":"ssr","type":"http","link":{"client":"client"},"handler":"src/entry-server.tsx","extensions":["js","jsx","ts","tsx"],"target":"server","root":"/home/node/.openclaw/workspace/cockbrothers/apps/frontend","base":"/","outDir":"/home/node/.openclaw/workspace/cockbrothers/apps/frontend/.vinxi/build/ssr","order":1},{"name":"client","type":"client","base":"/_build","handler":"src/entry-client.tsx","extensions":["js","jsx","ts","tsx"],"target":"browser","root":"/home/node/.openclaw/workspace/cockbrothers/apps/frontend","outDir":"/home/node/.openclaw/workspace/cockbrothers/apps/frontend/.vinxi/build/client","order":2},{"name":"server-fns","type":"http","base":"/_server","handler":"node_modules/.pnpm/@solidjs+start@1.3.2_solid-js@1.9.12_vinxi@0.5.11_@types+node@25.6.0_db0@0.3.4_drizzle-_cde62ea1c1843352bde074c098985f95/node_modules/@solidjs/start/dist/runtime/server-handler.js","target":"server","root":"/home/node/.openclaw/workspace/cockbrothers/apps/frontend","outDir":"/home/node/.openclaw/workspace/cockbrothers/apps/frontend/.vinxi/build/server-fns","order":3}],"server":{"compressPublicAssets":{"brotli":true},"routeRules":{"/_build/assets/**":{"headers":{"cache-control":"public, immutable, max-age=31536000"}}},"experimental":{"asyncContext":true},"preset":"vercel","prerender":{}},"root":"/home/node/.openclaw/workspace/cockbrothers/apps/frontend"};
-					const buildManifest = {"ssr":{"src/routes/api/integrations/printful/connect.ts?pick=GET":{"file":"connect.js","name":"connect","src":"src/routes/api/integrations/printful/connect.ts?pick=GET","isEntry":true,"isDynamicEntry":true},"src/routes/api/integrations/printful/connect.ts?pick=POST":{"file":"connect2.js","name":"connect","src":"src/routes/api/integrations/printful/connect.ts?pick=POST","isEntry":true,"isDynamicEntry":true},"src/routes/api/integrations/printify/connect.ts?pick=GET":{"file":"connect3.js","name":"connect","src":"src/routes/api/integrations/printify/connect.ts?pick=GET","isEntry":true,"isDynamicEntry":true},"src/routes/api/integrations/printify/connect.ts?pick=POST":{"file":"connect4.js","name":"connect","src":"src/routes/api/integrations/printify/connect.ts?pick=POST","isEntry":true,"isDynamicEntry":true},"src/routes/api/payments/subscribe.ts?pick=POST":{"file":"subscribe.js","name":"subscribe","src":"src/routes/api/payments/subscribe.ts?pick=POST","isEntry":true,"isDynamicEntry":true},"src/routes/api/payments/webhook.ts?pick=POST":{"file":"webhook.js","name":"webhook","src":"src/routes/api/payments/webhook.ts?pick=POST","isEntry":true,"isDynamicEntry":true},"virtual:$vinxi/handler/ssr":{"file":"ssr.js","name":"ssr","src":"virtual:$vinxi/handler/ssr","isEntry":true,"dynamicImports":["src/routes/api/integrations/printful/connect.ts?pick=GET","src/routes/api/integrations/printful/connect.ts?pick=GET","src/routes/api/integrations/printful/connect.ts?pick=GET","src/routes/api/integrations/printful/connect.ts?pick=GET","src/routes/api/integrations/printful/connect.ts?pick=POST","src/routes/api/integrations/printful/connect.ts?pick=POST","src/routes/api/integrations/printify/connect.ts?pick=GET","src/routes/api/integrations/printify/connect.ts?pick=GET","src/routes/api/integrations/printify/connect.ts?pick=GET","src/routes/api/integrations/printify/connect.ts?pick=GET","src/routes/api/integrations/printify/connect.ts?pick=POST","src/routes/api/integrations/printify/connect.ts?pick=POST","src/routes/api/payments/subscribe.ts?pick=POST","src/routes/api/payments/subscribe.ts?pick=POST","src/routes/api/payments/webhook.ts?pick=POST","src/routes/api/payments/webhook.ts?pick=POST"]}},"client":{"_AppShell-WHtggxiC.js":{"file":"assets/AppShell-WHtggxiC.js","name":"AppShell","imports":["_web-mN2KxWEl.js","_routing-B87cVCyJ.js","_Footer-DQsUiqGK.js","_Toast-DDyDzXhG.js"]},"_Badge-yEfM1VDs.js":{"file":"assets/Badge-yEfM1VDs.js","name":"Badge","imports":["_web-mN2KxWEl.js"]},"_BrandKitCreator-DX-QcfaX.js":{"file":"assets/BrandKitCreator-DX-QcfaX.js","name":"BrandKitCreator","imports":["_web-mN2KxWEl.js"]},"_BrandScoreIndicator-CvjaESeD.js":{"file":"assets/BrandScoreIndicator-CvjaESeD.js","name":"BrandScoreIndicator","imports":["_web-mN2KxWEl.js"]},"_Button-DNjmkYUH.js":{"file":"assets/Button-DNjmkYUH.js","name":"Button","imports":["_web-mN2KxWEl.js"]},"_Card-CeLD8oo-.js":{"file":"assets/Card-CeLD8oo-.js","name":"Card","imports":["_web-mN2KxWEl.js"]},"_Footer-DQsUiqGK.js":{"file":"assets/Footer-DQsUiqGK.js","name":"Footer","imports":["_web-mN2KxWEl.js"]},"_Input-CwjbpEBN.js":{"file":"assets/Input-CwjbpEBN.js","name":"Input","imports":["_web-mN2KxWEl.js"]},"_Toast-DDyDzXhG.js":{"file":"assets/Toast-DDyDzXhG.js","name":"Toast","imports":["_web-mN2KxWEl.js"]},"_client-BEX14on9.js":{"file":"assets/client-BEX14on9.js","name":"client"},"_components-D43TbKj7.js":{"file":"assets/components-D43TbKj7.js","name":"components","imports":["_web-mN2KxWEl.js","_routing-B87cVCyJ.js"]},"_mockupStore-DXdbV29y.js":{"file":"assets/mockupStore-DXdbV29y.js","name":"mockupStore","isDynamicEntry":true,"imports":["_store-BNroEFDV.js","_client-BEX14on9.js"]},"_preload-helper-ug3pwPZ1.js":{"file":"assets/preload-helper-ug3pwPZ1.js","name":"preload-helper"},"_routing-B87cVCyJ.js":{"file":"assets/routing-B87cVCyJ.js","name":"routing","imports":["_web-mN2KxWEl.js"]},"_store-BNroEFDV.js":{"file":"assets/store-BNroEFDV.js","name":"store","imports":["_web-mN2KxWEl.js"]},"_templateStore-BRijiVw5.js":{"file":"assets/templateStore-BRijiVw5.js","name":"templateStore","imports":["_store-BNroEFDV.js","src/lib/api/templates.ts"]},"_useBrand-yWCYCryg.js":{"file":"assets/useBrand-yWCYCryg.js","name":"useBrand","imports":["_web-mN2KxWEl.js","_preload-helper-ug3pwPZ1.js","_store-BNroEFDV.js"],"dynamicImports":["src/lib/api/brands.ts","src/lib/api/brands.ts","src/lib/api/brands.ts","src/lib/api/brands.ts","src/lib/api/brands.ts","src/lib/api/brands.ts","src/lib/api/brands.ts","src/lib/api/brands.ts"]},"_web-mN2KxWEl.js":{"file":"assets/web-mN2KxWEl.js","name":"web"},"src/lib/api/brands.ts":{"file":"assets/brands-CQuAh464.js","name":"brands","src":"src/lib/api/brands.ts","isDynamicEntry":true},"src/lib/api/templates.ts":{"file":"assets/templates-cljlMuna.js","name":"templates","src":"src/lib/api/templates.ts","isDynamicEntry":true,"imports":["_client-BEX14on9.js"]},"src/routes/dashboard/analytics.tsx?pick=default&pick=$css":{"file":"assets/analytics-CVg9lQOD.js","name":"analytics","src":"src/routes/dashboard/analytics.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_AppShell-WHtggxiC.js","_Card-CeLD8oo-.js","_routing-B87cVCyJ.js","_Footer-DQsUiqGK.js","_Toast-DDyDzXhG.js"]},"src/routes/dashboard/brands/[id].tsx?pick=default&pick=$css":{"file":"assets/_id_-BYM75TRm.js","name":"_id_","src":"src/routes/dashboard/brands/[id].tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_useBrand-yWCYCryg.js","_BrandKitCreator-DX-QcfaX.js","_BrandScoreIndicator-CvjaESeD.js","_routing-B87cVCyJ.js","_preload-helper-ug3pwPZ1.js","_store-BNroEFDV.js"]},"src/routes/dashboard/brands/index.tsx?pick=default&pick=$css":{"file":"assets/index-DQ0NSVk_.js","name":"index","src":"src/routes/dashboard/brands/index.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_useBrand-yWCYCryg.js","_BrandScoreIndicator-CvjaESeD.js","_routing-B87cVCyJ.js","_preload-helper-ug3pwPZ1.js","_store-BNroEFDV.js"]},"src/routes/dashboard/brands/new.tsx?pick=default&pick=$css":{"file":"assets/new-DEN4KOWF.js","name":"new","src":"src/routes/dashboard/brands/new.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_useBrand-yWCYCryg.js","_BrandKitCreator-DX-QcfaX.js","_routing-B87cVCyJ.js","_preload-helper-ug3pwPZ1.js","_store-BNroEFDV.js"]},"src/routes/dashboard/index.tsx?pick=default&pick=$css":{"file":"assets/index-BY3aQfKW.js","name":"index","src":"src/routes/dashboard/index.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_AppShell-WHtggxiC.js","_Card-CeLD8oo-.js","_Button-DNjmkYUH.js","_Badge-yEfM1VDs.js","_components-D43TbKj7.js","_routing-B87cVCyJ.js","_Footer-DQsUiqGK.js","_Toast-DDyDzXhG.js"]},"src/routes/dashboard/integrations/index.tsx?pick=default&pick=$css":{"file":"assets/index-BPO61Of1.js","name":"index","src":"src/routes/dashboard/integrations/index.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_store-BNroEFDV.js"]},"src/routes/dashboard/mockups/index.tsx?pick=default&pick=$css":{"file":"assets/index-BIE36n4m.js","name":"index","src":"src/routes/dashboard/mockups/index.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_AppShell-WHtggxiC.js","_Card-CeLD8oo-.js","_Button-DNjmkYUH.js","_Badge-yEfM1VDs.js","_components-D43TbKj7.js","_routing-B87cVCyJ.js","_Footer-DQsUiqGK.js","_Toast-DDyDzXhG.js"]},"src/routes/dashboard/products/[id].tsx?pick=default&pick=$css":{"file":"assets/_id_-D-Sz99dx.js","name":"_id_","src":"src/routes/dashboard/products/[id].tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_preload-helper-ug3pwPZ1.js","_web-mN2KxWEl.js","_mockupStore-DXdbV29y.js","_routing-B87cVCyJ.js","_store-BNroEFDV.js","_client-BEX14on9.js"],"dynamicImports":["src/lib/api/brands.ts","src/lib/api/templates.ts","_mockupStore-DXdbV29y.js"]},"src/routes/dashboard/products/index.tsx?pick=default&pick=$css":{"file":"assets/index-BSM3y1i4.js","name":"index","src":"src/routes/dashboard/products/index.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_mockupStore-DXdbV29y.js","_store-BNroEFDV.js","_client-BEX14on9.js"]},"src/routes/dashboard/settings/billing.tsx?pick=default&pick=$css":{"file":"assets/billing-BmsDcYlL.js","name":"billing","src":"src/routes/dashboard/settings/billing.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_AppShell-WHtggxiC.js","_Card-CeLD8oo-.js","_Button-DNjmkYUH.js","_Badge-yEfM1VDs.js","_Toast-DDyDzXhG.js","_components-D43TbKj7.js","_routing-B87cVCyJ.js","_Footer-DQsUiqGK.js"]},"src/routes/dashboard/settings/index.tsx?pick=default&pick=$css":{"file":"assets/index-B3TWSIsR.js","name":"index","src":"src/routes/dashboard/settings/index.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_AppShell-WHtggxiC.js","_Card-CeLD8oo-.js","_Input-CwjbpEBN.js","_Button-DNjmkYUH.js","_Toast-DDyDzXhG.js","_routing-B87cVCyJ.js","_Footer-DQsUiqGK.js"]},"src/routes/dashboard/templates/[id].tsx?pick=default&pick=$css":{"file":"assets/_id_-BYty0Ghv.js","name":"_id_","src":"src/routes/dashboard/templates/[id].tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_preload-helper-ug3pwPZ1.js","_web-mN2KxWEl.js","_templateStore-BRijiVw5.js","_routing-B87cVCyJ.js","_store-BNroEFDV.js","src/lib/api/templates.ts","_client-BEX14on9.js"],"dynamicImports":["src/lib/api/templates.ts","src/lib/api/templates.ts"]},"src/routes/dashboard/templates/index.tsx?pick=default&pick=$css":{"file":"assets/index-BqLE_EY8.js","name":"index","src":"src/routes/dashboard/templates/index.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_templateStore-BRijiVw5.js","_store-BNroEFDV.js","src/lib/api/templates.ts","_client-BEX14on9.js"]},"src/routes/index.tsx?pick=default&pick=$css":{"file":"assets/index-Bu2R4vEs.js","name":"index","src":"src/routes/index.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_Button-DNjmkYUH.js","_Card-CeLD8oo-.js","_Footer-DQsUiqGK.js","_routing-B87cVCyJ.js","_components-D43TbKj7.js"]},"src/routes/login.tsx?pick=default&pick=$css":{"file":"assets/login-BvOluor0.js","name":"login","src":"src/routes/login.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_Button-DNjmkYUH.js","_Input-CwjbpEBN.js","_Card-CeLD8oo-.js","_routing-B87cVCyJ.js","_components-D43TbKj7.js"]},"src/routes/pricing.tsx?pick=default&pick=$css":{"file":"assets/pricing-yljqYrz9.js","name":"pricing","src":"src/routes/pricing.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_Button-DNjmkYUH.js","_Footer-DQsUiqGK.js","_routing-B87cVCyJ.js","_components-D43TbKj7.js"]},"src/routes/register.tsx?pick=default&pick=$css":{"file":"assets/register-DUGgMgNg.js","name":"register","src":"src/routes/register.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_Button-DNjmkYUH.js","_Input-CwjbpEBN.js","_Card-CeLD8oo-.js","_routing-B87cVCyJ.js","_components-D43TbKj7.js"]},"virtual:$vinxi/handler/client":{"file":"assets/client-C6h_BHkL.js","name":"client","src":"virtual:$vinxi/handler/client","isEntry":true,"imports":["_web-mN2KxWEl.js","_preload-helper-ug3pwPZ1.js","_Toast-DDyDzXhG.js","_routing-B87cVCyJ.js"],"dynamicImports":["src/routes/dashboard/analytics.tsx?pick=default&pick=$css","src/routes/dashboard/brands/[id].tsx?pick=default&pick=$css","src/routes/dashboard/brands/index.tsx?pick=default&pick=$css","src/routes/dashboard/brands/new.tsx?pick=default&pick=$css","src/routes/dashboard/index.tsx?pick=default&pick=$css","src/routes/dashboard/integrations/index.tsx?pick=default&pick=$css","src/routes/dashboard/mockups/index.tsx?pick=default&pick=$css","src/routes/dashboard/products/[id].tsx?pick=default&pick=$css","src/routes/dashboard/products/index.tsx?pick=default&pick=$css","src/routes/dashboard/settings/billing.tsx?pick=default&pick=$css","src/routes/dashboard/settings/index.tsx?pick=default&pick=$css","src/routes/dashboard/templates/[id].tsx?pick=default&pick=$css","src/routes/dashboard/templates/index.tsx?pick=default&pick=$css","src/routes/index.tsx?pick=default&pick=$css","src/routes/login.tsx?pick=default&pick=$css","src/routes/pricing.tsx?pick=default&pick=$css","src/routes/register.tsx?pick=default&pick=$css"],"css":["assets/client-DtP-Rv0G.css"]}},"server-fns":{"_server-fns-BV-kv3QF.js":{"file":"assets/server-fns-BV-kv3QF.js","name":"server-fns","dynamicImports":["src/routes/api/integrations/printful/connect.ts?pick=GET","src/routes/api/integrations/printful/connect.ts?pick=GET","src/routes/api/integrations/printful/connect.ts?pick=GET","src/routes/api/integrations/printful/connect.ts?pick=GET","src/routes/api/integrations/printful/connect.ts?pick=POST","src/routes/api/integrations/printful/connect.ts?pick=POST","src/routes/api/integrations/printify/connect.ts?pick=GET","src/routes/api/integrations/printify/connect.ts?pick=GET","src/routes/api/integrations/printify/connect.ts?pick=GET","src/routes/api/integrations/printify/connect.ts?pick=GET","src/routes/api/integrations/printify/connect.ts?pick=POST","src/routes/api/integrations/printify/connect.ts?pick=POST","src/routes/api/payments/subscribe.ts?pick=POST","src/routes/api/payments/subscribe.ts?pick=POST","src/routes/api/payments/webhook.ts?pick=POST","src/routes/api/payments/webhook.ts?pick=POST","src/app.tsx"]},"src/app.tsx":{"file":"assets/app-uwcYTPv8.js","name":"app","src":"src/app.tsx","isDynamicEntry":true,"imports":["_server-fns-BV-kv3QF.js"],"css":["assets/app-CAP0w3o3.css"]},"src/routes/api/integrations/printful/connect.ts?pick=GET":{"file":"connect.js","name":"connect","src":"src/routes/api/integrations/printful/connect.ts?pick=GET","isEntry":true,"isDynamicEntry":true},"src/routes/api/integrations/printful/connect.ts?pick=POST":{"file":"connect2.js","name":"connect","src":"src/routes/api/integrations/printful/connect.ts?pick=POST","isEntry":true,"isDynamicEntry":true},"src/routes/api/integrations/printify/connect.ts?pick=GET":{"file":"connect3.js","name":"connect","src":"src/routes/api/integrations/printify/connect.ts?pick=GET","isEntry":true,"isDynamicEntry":true},"src/routes/api/integrations/printify/connect.ts?pick=POST":{"file":"connect4.js","name":"connect","src":"src/routes/api/integrations/printify/connect.ts?pick=POST","isEntry":true,"isDynamicEntry":true},"src/routes/api/payments/subscribe.ts?pick=POST":{"file":"subscribe.js","name":"subscribe","src":"src/routes/api/payments/subscribe.ts?pick=POST","isEntry":true,"isDynamicEntry":true},"src/routes/api/payments/webhook.ts?pick=POST":{"file":"webhook.js","name":"webhook","src":"src/routes/api/payments/webhook.ts?pick=POST","isEntry":true,"isDynamicEntry":true},"virtual:$vinxi/handler/server-fns":{"file":"server-fns.js","name":"server-fns","src":"virtual:$vinxi/handler/server-fns","isEntry":true,"imports":["_server-fns-BV-kv3QF.js"]}}};
+					const buildManifest = {"ssr":{"_data-BYoURc4V.js":{"file":"assets/data-BYoURc4V.js","name":"data"},"src/routes/api/[...path].ts?pick=DELETE":{"file":"_...path_.js","name":"_...path_","src":"src/routes/api/[...path].ts?pick=DELETE","isEntry":true,"isDynamicEntry":true},"src/routes/api/[...path].ts?pick=GET":{"file":"_...path_2.js","name":"_...path_","src":"src/routes/api/[...path].ts?pick=GET","isEntry":true,"isDynamicEntry":true},"src/routes/api/[...path].ts?pick=PATCH":{"file":"_...path_3.js","name":"_...path_","src":"src/routes/api/[...path].ts?pick=PATCH","isEntry":true,"isDynamicEntry":true},"src/routes/api/[...path].ts?pick=POST":{"file":"_...path_4.js","name":"_...path_","src":"src/routes/api/[...path].ts?pick=POST","isEntry":true,"isDynamicEntry":true},"src/routes/api/auth/login.ts?pick=POST":{"file":"login.js","name":"login","src":"src/routes/api/auth/login.ts?pick=POST","isEntry":true,"isDynamicEntry":true,"imports":["_data-BYoURc4V.js"]},"src/routes/api/auth/logout.ts?pick=POST":{"file":"logout.js","name":"logout","src":"src/routes/api/auth/logout.ts?pick=POST","isEntry":true,"isDynamicEntry":true,"imports":["_data-BYoURc4V.js"]},"src/routes/api/auth/register.ts?pick=POST":{"file":"register.js","name":"register","src":"src/routes/api/auth/register.ts?pick=POST","isEntry":true,"isDynamicEntry":true,"imports":["_data-BYoURc4V.js"]},"src/routes/api/auth/session.ts?pick=GET":{"file":"session.js","name":"session","src":"src/routes/api/auth/session.ts?pick=GET","isEntry":true,"isDynamicEntry":true,"imports":["_data-BYoURc4V.js"]},"src/routes/api/integrations/printful/connect.ts?pick=GET":{"file":"connect.js","name":"connect","src":"src/routes/api/integrations/printful/connect.ts?pick=GET","isEntry":true,"isDynamicEntry":true},"src/routes/api/integrations/printful/connect.ts?pick=POST":{"file":"connect2.js","name":"connect","src":"src/routes/api/integrations/printful/connect.ts?pick=POST","isEntry":true,"isDynamicEntry":true},"src/routes/api/integrations/printify/connect.ts?pick=GET":{"file":"connect3.js","name":"connect","src":"src/routes/api/integrations/printify/connect.ts?pick=GET","isEntry":true,"isDynamicEntry":true},"src/routes/api/integrations/printify/connect.ts?pick=POST":{"file":"connect4.js","name":"connect","src":"src/routes/api/integrations/printify/connect.ts?pick=POST","isEntry":true,"isDynamicEntry":true},"src/routes/api/payments/subscribe.ts?pick=POST":{"file":"subscribe.js","name":"subscribe","src":"src/routes/api/payments/subscribe.ts?pick=POST","isEntry":true,"isDynamicEntry":true},"src/routes/api/payments/webhook.ts?pick=POST":{"file":"webhook.js","name":"webhook","src":"src/routes/api/payments/webhook.ts?pick=POST","isEntry":true,"isDynamicEntry":true},"virtual:$vinxi/handler/ssr":{"file":"ssr.js","name":"ssr","src":"virtual:$vinxi/handler/ssr","isEntry":true,"dynamicImports":["src/routes/api/[...path].ts?pick=DELETE","src/routes/api/[...path].ts?pick=DELETE","src/routes/api/[...path].ts?pick=GET","src/routes/api/[...path].ts?pick=GET","src/routes/api/[...path].ts?pick=GET","src/routes/api/[...path].ts?pick=GET","src/routes/api/[...path].ts?pick=PATCH","src/routes/api/[...path].ts?pick=PATCH","src/routes/api/[...path].ts?pick=POST","src/routes/api/[...path].ts?pick=POST","src/routes/api/auth/login.ts?pick=POST","src/routes/api/auth/login.ts?pick=POST","src/routes/api/auth/logout.ts?pick=POST","src/routes/api/auth/logout.ts?pick=POST","src/routes/api/auth/register.ts?pick=POST","src/routes/api/auth/register.ts?pick=POST","src/routes/api/auth/session.ts?pick=GET","src/routes/api/auth/session.ts?pick=GET","src/routes/api/auth/session.ts?pick=GET","src/routes/api/auth/session.ts?pick=GET","src/routes/api/integrations/printful/connect.ts?pick=GET","src/routes/api/integrations/printful/connect.ts?pick=GET","src/routes/api/integrations/printful/connect.ts?pick=GET","src/routes/api/integrations/printful/connect.ts?pick=GET","src/routes/api/integrations/printful/connect.ts?pick=POST","src/routes/api/integrations/printful/connect.ts?pick=POST","src/routes/api/integrations/printify/connect.ts?pick=GET","src/routes/api/integrations/printify/connect.ts?pick=GET","src/routes/api/integrations/printify/connect.ts?pick=GET","src/routes/api/integrations/printify/connect.ts?pick=GET","src/routes/api/integrations/printify/connect.ts?pick=POST","src/routes/api/integrations/printify/connect.ts?pick=POST","src/routes/api/payments/subscribe.ts?pick=POST","src/routes/api/payments/subscribe.ts?pick=POST","src/routes/api/payments/webhook.ts?pick=POST","src/routes/api/payments/webhook.ts?pick=POST"]}},"client":{"_AppShell-WHtggxiC.js":{"file":"assets/AppShell-WHtggxiC.js","name":"AppShell","imports":["_web-mN2KxWEl.js","_routing-B87cVCyJ.js","_Footer-DQsUiqGK.js","_Toast-DDyDzXhG.js"]},"_Badge-yEfM1VDs.js":{"file":"assets/Badge-yEfM1VDs.js","name":"Badge","imports":["_web-mN2KxWEl.js"]},"_BrandKitCreator-DX-QcfaX.js":{"file":"assets/BrandKitCreator-DX-QcfaX.js","name":"BrandKitCreator","imports":["_web-mN2KxWEl.js"]},"_BrandScoreIndicator-CvjaESeD.js":{"file":"assets/BrandScoreIndicator-CvjaESeD.js","name":"BrandScoreIndicator","imports":["_web-mN2KxWEl.js"]},"_Button-DNjmkYUH.js":{"file":"assets/Button-DNjmkYUH.js","name":"Button","imports":["_web-mN2KxWEl.js"]},"_Card-CeLD8oo-.js":{"file":"assets/Card-CeLD8oo-.js","name":"Card","imports":["_web-mN2KxWEl.js"]},"_Footer-DQsUiqGK.js":{"file":"assets/Footer-DQsUiqGK.js","name":"Footer","imports":["_web-mN2KxWEl.js"]},"_Input-CwjbpEBN.js":{"file":"assets/Input-CwjbpEBN.js","name":"Input","imports":["_web-mN2KxWEl.js"]},"_Toast-DDyDzXhG.js":{"file":"assets/Toast-DDyDzXhG.js","name":"Toast","imports":["_web-mN2KxWEl.js"]},"_client-BEX14on9.js":{"file":"assets/client-BEX14on9.js","name":"client"},"_components-D43TbKj7.js":{"file":"assets/components-D43TbKj7.js","name":"components","imports":["_web-mN2KxWEl.js","_routing-B87cVCyJ.js"]},"_mockupStore-DXdbV29y.js":{"file":"assets/mockupStore-DXdbV29y.js","name":"mockupStore","isDynamicEntry":true,"imports":["_store-BNroEFDV.js","_client-BEX14on9.js"]},"_preload-helper-ug3pwPZ1.js":{"file":"assets/preload-helper-ug3pwPZ1.js","name":"preload-helper"},"_routing-B87cVCyJ.js":{"file":"assets/routing-B87cVCyJ.js","name":"routing","imports":["_web-mN2KxWEl.js"]},"_store-BNroEFDV.js":{"file":"assets/store-BNroEFDV.js","name":"store","imports":["_web-mN2KxWEl.js"]},"_templateStore-BRijiVw5.js":{"file":"assets/templateStore-BRijiVw5.js","name":"templateStore","imports":["_store-BNroEFDV.js","src/lib/api/templates.ts"]},"_useBrand-yWCYCryg.js":{"file":"assets/useBrand-yWCYCryg.js","name":"useBrand","imports":["_web-mN2KxWEl.js","_preload-helper-ug3pwPZ1.js","_store-BNroEFDV.js"],"dynamicImports":["src/lib/api/brands.ts","src/lib/api/brands.ts","src/lib/api/brands.ts","src/lib/api/brands.ts","src/lib/api/brands.ts","src/lib/api/brands.ts","src/lib/api/brands.ts","src/lib/api/brands.ts"]},"_web-mN2KxWEl.js":{"file":"assets/web-mN2KxWEl.js","name":"web"},"src/lib/api/brands.ts":{"file":"assets/brands-CQuAh464.js","name":"brands","src":"src/lib/api/brands.ts","isDynamicEntry":true},"src/lib/api/templates.ts":{"file":"assets/templates-cljlMuna.js","name":"templates","src":"src/lib/api/templates.ts","isDynamicEntry":true,"imports":["_client-BEX14on9.js"]},"src/routes/dashboard/analytics.tsx?pick=default&pick=$css":{"file":"assets/analytics-CVg9lQOD.js","name":"analytics","src":"src/routes/dashboard/analytics.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_AppShell-WHtggxiC.js","_Card-CeLD8oo-.js","_routing-B87cVCyJ.js","_Footer-DQsUiqGK.js","_Toast-DDyDzXhG.js"]},"src/routes/dashboard/brands/[id].tsx?pick=default&pick=$css":{"file":"assets/_id_-BYM75TRm.js","name":"_id_","src":"src/routes/dashboard/brands/[id].tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_useBrand-yWCYCryg.js","_BrandKitCreator-DX-QcfaX.js","_BrandScoreIndicator-CvjaESeD.js","_routing-B87cVCyJ.js","_preload-helper-ug3pwPZ1.js","_store-BNroEFDV.js"]},"src/routes/dashboard/brands/index.tsx?pick=default&pick=$css":{"file":"assets/index-DQ0NSVk_.js","name":"index","src":"src/routes/dashboard/brands/index.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_useBrand-yWCYCryg.js","_BrandScoreIndicator-CvjaESeD.js","_routing-B87cVCyJ.js","_preload-helper-ug3pwPZ1.js","_store-BNroEFDV.js"]},"src/routes/dashboard/brands/new.tsx?pick=default&pick=$css":{"file":"assets/new-DEN4KOWF.js","name":"new","src":"src/routes/dashboard/brands/new.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_useBrand-yWCYCryg.js","_BrandKitCreator-DX-QcfaX.js","_routing-B87cVCyJ.js","_preload-helper-ug3pwPZ1.js","_store-BNroEFDV.js"]},"src/routes/dashboard/index.tsx?pick=default&pick=$css":{"file":"assets/index-BY3aQfKW.js","name":"index","src":"src/routes/dashboard/index.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_AppShell-WHtggxiC.js","_Card-CeLD8oo-.js","_Button-DNjmkYUH.js","_Badge-yEfM1VDs.js","_components-D43TbKj7.js","_routing-B87cVCyJ.js","_Footer-DQsUiqGK.js","_Toast-DDyDzXhG.js"]},"src/routes/dashboard/integrations/index.tsx?pick=default&pick=$css":{"file":"assets/index-BPO61Of1.js","name":"index","src":"src/routes/dashboard/integrations/index.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_store-BNroEFDV.js"]},"src/routes/dashboard/mockups/index.tsx?pick=default&pick=$css":{"file":"assets/index-BIE36n4m.js","name":"index","src":"src/routes/dashboard/mockups/index.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_AppShell-WHtggxiC.js","_Card-CeLD8oo-.js","_Button-DNjmkYUH.js","_Badge-yEfM1VDs.js","_components-D43TbKj7.js","_routing-B87cVCyJ.js","_Footer-DQsUiqGK.js","_Toast-DDyDzXhG.js"]},"src/routes/dashboard/products/[id].tsx?pick=default&pick=$css":{"file":"assets/_id_-D-Sz99dx.js","name":"_id_","src":"src/routes/dashboard/products/[id].tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_preload-helper-ug3pwPZ1.js","_web-mN2KxWEl.js","_mockupStore-DXdbV29y.js","_routing-B87cVCyJ.js","_store-BNroEFDV.js","_client-BEX14on9.js"],"dynamicImports":["src/lib/api/brands.ts","src/lib/api/templates.ts","_mockupStore-DXdbV29y.js"]},"src/routes/dashboard/products/index.tsx?pick=default&pick=$css":{"file":"assets/index-BSM3y1i4.js","name":"index","src":"src/routes/dashboard/products/index.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_mockupStore-DXdbV29y.js","_store-BNroEFDV.js","_client-BEX14on9.js"]},"src/routes/dashboard/settings/billing.tsx?pick=default&pick=$css":{"file":"assets/billing-BmsDcYlL.js","name":"billing","src":"src/routes/dashboard/settings/billing.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_AppShell-WHtggxiC.js","_Card-CeLD8oo-.js","_Button-DNjmkYUH.js","_Badge-yEfM1VDs.js","_Toast-DDyDzXhG.js","_components-D43TbKj7.js","_routing-B87cVCyJ.js","_Footer-DQsUiqGK.js"]},"src/routes/dashboard/settings/index.tsx?pick=default&pick=$css":{"file":"assets/index-B3TWSIsR.js","name":"index","src":"src/routes/dashboard/settings/index.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_AppShell-WHtggxiC.js","_Card-CeLD8oo-.js","_Input-CwjbpEBN.js","_Button-DNjmkYUH.js","_Toast-DDyDzXhG.js","_routing-B87cVCyJ.js","_Footer-DQsUiqGK.js"]},"src/routes/dashboard/templates/[id].tsx?pick=default&pick=$css":{"file":"assets/_id_-BYty0Ghv.js","name":"_id_","src":"src/routes/dashboard/templates/[id].tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_preload-helper-ug3pwPZ1.js","_web-mN2KxWEl.js","_templateStore-BRijiVw5.js","_routing-B87cVCyJ.js","_store-BNroEFDV.js","src/lib/api/templates.ts","_client-BEX14on9.js"],"dynamicImports":["src/lib/api/templates.ts","src/lib/api/templates.ts"]},"src/routes/dashboard/templates/index.tsx?pick=default&pick=$css":{"file":"assets/index-BqLE_EY8.js","name":"index","src":"src/routes/dashboard/templates/index.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_templateStore-BRijiVw5.js","_store-BNroEFDV.js","src/lib/api/templates.ts","_client-BEX14on9.js"]},"src/routes/index.tsx?pick=default&pick=$css":{"file":"assets/index-Bu2R4vEs.js","name":"index","src":"src/routes/index.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_Button-DNjmkYUH.js","_Card-CeLD8oo-.js","_Footer-DQsUiqGK.js","_routing-B87cVCyJ.js","_components-D43TbKj7.js"]},"src/routes/login.tsx?pick=default&pick=$css":{"file":"assets/login-BvOluor0.js","name":"login","src":"src/routes/login.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_Button-DNjmkYUH.js","_Input-CwjbpEBN.js","_Card-CeLD8oo-.js","_routing-B87cVCyJ.js","_components-D43TbKj7.js"]},"src/routes/pricing.tsx?pick=default&pick=$css":{"file":"assets/pricing-yljqYrz9.js","name":"pricing","src":"src/routes/pricing.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_Button-DNjmkYUH.js","_Footer-DQsUiqGK.js","_routing-B87cVCyJ.js","_components-D43TbKj7.js"]},"src/routes/register.tsx?pick=default&pick=$css":{"file":"assets/register-DUGgMgNg.js","name":"register","src":"src/routes/register.tsx?pick=default&pick=$css","isEntry":true,"isDynamicEntry":true,"imports":["_web-mN2KxWEl.js","_Button-DNjmkYUH.js","_Input-CwjbpEBN.js","_Card-CeLD8oo-.js","_routing-B87cVCyJ.js","_components-D43TbKj7.js"]},"virtual:$vinxi/handler/client":{"file":"assets/client-C6h_BHkL.js","name":"client","src":"virtual:$vinxi/handler/client","isEntry":true,"imports":["_web-mN2KxWEl.js","_preload-helper-ug3pwPZ1.js","_Toast-DDyDzXhG.js","_routing-B87cVCyJ.js"],"dynamicImports":["src/routes/dashboard/analytics.tsx?pick=default&pick=$css","src/routes/dashboard/brands/[id].tsx?pick=default&pick=$css","src/routes/dashboard/brands/index.tsx?pick=default&pick=$css","src/routes/dashboard/brands/new.tsx?pick=default&pick=$css","src/routes/dashboard/index.tsx?pick=default&pick=$css","src/routes/dashboard/integrations/index.tsx?pick=default&pick=$css","src/routes/dashboard/mockups/index.tsx?pick=default&pick=$css","src/routes/dashboard/products/[id].tsx?pick=default&pick=$css","src/routes/dashboard/products/index.tsx?pick=default&pick=$css","src/routes/dashboard/settings/billing.tsx?pick=default&pick=$css","src/routes/dashboard/settings/index.tsx?pick=default&pick=$css","src/routes/dashboard/templates/[id].tsx?pick=default&pick=$css","src/routes/dashboard/templates/index.tsx?pick=default&pick=$css","src/routes/index.tsx?pick=default&pick=$css","src/routes/login.tsx?pick=default&pick=$css","src/routes/pricing.tsx?pick=default&pick=$css","src/routes/register.tsx?pick=default&pick=$css"],"css":["assets/client-DtP-Rv0G.css"]}},"server-fns":{"_data-BYoURc4V.js":{"file":"assets/data-BYoURc4V.js","name":"data"},"_server-fns-DS4A3qc8.js":{"file":"assets/server-fns-DS4A3qc8.js","name":"server-fns","dynamicImports":["src/routes/api/[...path].ts?pick=DELETE","src/routes/api/[...path].ts?pick=DELETE","src/routes/api/[...path].ts?pick=GET","src/routes/api/[...path].ts?pick=GET","src/routes/api/[...path].ts?pick=GET","src/routes/api/[...path].ts?pick=GET","src/routes/api/[...path].ts?pick=PATCH","src/routes/api/[...path].ts?pick=PATCH","src/routes/api/[...path].ts?pick=POST","src/routes/api/[...path].ts?pick=POST","src/routes/api/auth/login.ts?pick=POST","src/routes/api/auth/login.ts?pick=POST","src/routes/api/auth/logout.ts?pick=POST","src/routes/api/auth/logout.ts?pick=POST","src/routes/api/auth/register.ts?pick=POST","src/routes/api/auth/register.ts?pick=POST","src/routes/api/auth/session.ts?pick=GET","src/routes/api/auth/session.ts?pick=GET","src/routes/api/auth/session.ts?pick=GET","src/routes/api/auth/session.ts?pick=GET","src/routes/api/integrations/printful/connect.ts?pick=GET","src/routes/api/integrations/printful/connect.ts?pick=GET","src/routes/api/integrations/printful/connect.ts?pick=GET","src/routes/api/integrations/printful/connect.ts?pick=GET","src/routes/api/integrations/printful/connect.ts?pick=POST","src/routes/api/integrations/printful/connect.ts?pick=POST","src/routes/api/integrations/printify/connect.ts?pick=GET","src/routes/api/integrations/printify/connect.ts?pick=GET","src/routes/api/integrations/printify/connect.ts?pick=GET","src/routes/api/integrations/printify/connect.ts?pick=GET","src/routes/api/integrations/printify/connect.ts?pick=POST","src/routes/api/integrations/printify/connect.ts?pick=POST","src/routes/api/payments/subscribe.ts?pick=POST","src/routes/api/payments/subscribe.ts?pick=POST","src/routes/api/payments/webhook.ts?pick=POST","src/routes/api/payments/webhook.ts?pick=POST","src/app.tsx"]},"src/app.tsx":{"file":"assets/app-C-2q4V1l.js","name":"app","src":"src/app.tsx","isDynamicEntry":true,"imports":["_server-fns-DS4A3qc8.js"],"css":["assets/app-DtP-Rv0G.css"]},"src/routes/api/[...path].ts?pick=DELETE":{"file":"_...path_.js","name":"_...path_","src":"src/routes/api/[...path].ts?pick=DELETE","isEntry":true,"isDynamicEntry":true},"src/routes/api/[...path].ts?pick=GET":{"file":"_...path_2.js","name":"_...path_","src":"src/routes/api/[...path].ts?pick=GET","isEntry":true,"isDynamicEntry":true},"src/routes/api/[...path].ts?pick=PATCH":{"file":"_...path_3.js","name":"_...path_","src":"src/routes/api/[...path].ts?pick=PATCH","isEntry":true,"isDynamicEntry":true},"src/routes/api/[...path].ts?pick=POST":{"file":"_...path_4.js","name":"_...path_","src":"src/routes/api/[...path].ts?pick=POST","isEntry":true,"isDynamicEntry":true},"src/routes/api/auth/login.ts?pick=POST":{"file":"login.js","name":"login","src":"src/routes/api/auth/login.ts?pick=POST","isEntry":true,"isDynamicEntry":true,"imports":["_data-BYoURc4V.js"]},"src/routes/api/auth/logout.ts?pick=POST":{"file":"logout.js","name":"logout","src":"src/routes/api/auth/logout.ts?pick=POST","isEntry":true,"isDynamicEntry":true,"imports":["_data-BYoURc4V.js"]},"src/routes/api/auth/register.ts?pick=POST":{"file":"register.js","name":"register","src":"src/routes/api/auth/register.ts?pick=POST","isEntry":true,"isDynamicEntry":true,"imports":["_data-BYoURc4V.js"]},"src/routes/api/auth/session.ts?pick=GET":{"file":"session.js","name":"session","src":"src/routes/api/auth/session.ts?pick=GET","isEntry":true,"isDynamicEntry":true,"imports":["_data-BYoURc4V.js"]},"src/routes/api/integrations/printful/connect.ts?pick=GET":{"file":"connect.js","name":"connect","src":"src/routes/api/integrations/printful/connect.ts?pick=GET","isEntry":true,"isDynamicEntry":true},"src/routes/api/integrations/printful/connect.ts?pick=POST":{"file":"connect2.js","name":"connect","src":"src/routes/api/integrations/printful/connect.ts?pick=POST","isEntry":true,"isDynamicEntry":true},"src/routes/api/integrations/printify/connect.ts?pick=GET":{"file":"connect3.js","name":"connect","src":"src/routes/api/integrations/printify/connect.ts?pick=GET","isEntry":true,"isDynamicEntry":true},"src/routes/api/integrations/printify/connect.ts?pick=POST":{"file":"connect4.js","name":"connect","src":"src/routes/api/integrations/printify/connect.ts?pick=POST","isEntry":true,"isDynamicEntry":true},"src/routes/api/payments/subscribe.ts?pick=POST":{"file":"subscribe.js","name":"subscribe","src":"src/routes/api/payments/subscribe.ts?pick=POST","isEntry":true,"isDynamicEntry":true},"src/routes/api/payments/webhook.ts?pick=POST":{"file":"webhook.js","name":"webhook","src":"src/routes/api/payments/webhook.ts?pick=POST","isEntry":true,"isDynamicEntry":true},"virtual:$vinxi/handler/server-fns":{"file":"server-fns.js","name":"server-fns","src":"virtual:$vinxi/handler/server-fns","isEntry":true,"imports":["_server-fns-DS4A3qc8.js"]}}};
 
 					const routeManifest = {"ssr":{},"client":{},"server-fns":{}};
 
@@ -995,8 +995,8 @@ const _k20FAH = eventHandler((event) => {
 var __defProp$1 = Object.defineProperty;
 var __defNormalProp$1 = (obj, key, value) => key in obj ? __defProp$1(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
 var __publicField$1 = (obj, key, value) => __defNormalProp$1(obj, typeof key !== "symbol" ? key + "" : key, value);
-function Wr(e, t) {
-  const r = (e || "").split(";").filter((c) => typeof c == "string" && !!c.trim()), n = r.shift() || "", a = Gr(n), o = a.name;
+function Gr(e, t) {
+  const r = (e || "").split(";").filter((c) => typeof c == "string" && !!c.trim()), n = r.shift() || "", a = Wr(n), o = a.name;
   let i = a.value;
   try {
     i = (t == null ? void 0 : t.decode) === false ? i : ((t == null ? void 0 : t.decode) || decodeURIComponent)(i);
@@ -1032,7 +1032,7 @@ function Wr(e, t) {
   }
   return u;
 }
-function Gr(e) {
+function Wr(e) {
   let t = "", r = "";
   const n = e.split("=");
   return n.length > 1 ? (t = n.shift(), r = n.join("=")) : r = e, { name: t, value: r };
@@ -1089,7 +1089,7 @@ function Jr(e = {}) {
     return t[r] || (t[r] = Xr({ ...e, ...n })), t[r];
   } };
 }
-const oe = typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : typeof global < "u" ? global : {}, He$1 = "__unctx__", Yr = oe[He$1] || (oe[He$1] = Jr()), Kr = (e, t = {}) => Yr.get(e, t), qe$1 = "__unctx_async_handlers__", Me$1 = oe[qe$1] || (oe[qe$1] = /* @__PURE__ */ new Set());
+const oe = typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : typeof global < "u" ? global : {}, je$1 = "__unctx__", Yr = oe[je$1] || (oe[je$1] = Jr()), Kr = (e, t = {}) => Yr.get(e, t), qe$1 = "__unctx_async_handlers__", Me$1 = oe[qe$1] || (oe[qe$1] = /* @__PURE__ */ new Set());
 function Qr(e) {
   let t;
   const r = mt(e), n = { duplex: "half", method: e.method, headers: e.headers };
@@ -1108,7 +1108,7 @@ const bt = /* @__PURE__ */ Symbol("$HTTPEvent");
 function tn(e) {
   return typeof e == "object" && (e instanceof H3Event || (e == null ? void 0 : e[bt]) instanceof H3Event || (e == null ? void 0 : e.__is_event__) === true);
 }
-function S(e) {
+function S$1(e) {
   return function(...t) {
     var _a2;
     let r = t[0];
@@ -1121,7 +1121,7 @@ function S(e) {
     return e(...t);
   };
 }
-const mt = S(getRequestURL), rn = S(getRequestIP), ie = S(setResponseStatus), Be$1 = S(getResponseStatus), nn = S(getResponseStatusText), se = S(getResponseHeaders), Ve$1 = S(getResponseHeader), sn = S(setResponseHeader), yt = S(appendResponseHeader), an = S(parseCookies), on = S(getCookie), un = S(setCookie), D$1 = S(setHeader), cn = S(getRequestWebStream), ln = S(removeResponseHeader), fn = S(Zr);
+const mt = S$1(getRequestURL), rn = S$1(getRequestIP), ie = S$1(setResponseStatus), Be$1 = S$1(getResponseStatus), nn = S$1(getResponseStatusText), se = S$1(getResponseHeaders), Ve$1 = S$1(getResponseHeader), sn = S$1(setResponseHeader), yt = S$1(appendResponseHeader), an = S$1(parseCookies), on = S$1(getCookie), un = S$1(setCookie), H$1 = S$1(setHeader), cn = S$1(getRequestWebStream), ln = S$1(removeResponseHeader), fn = S$1(Zr);
 function pn() {
   var _a2;
   return Kr("nitro-app", { asyncContext: !!((_a2 = globalThis.app.config.server.experimental) == null ? void 0 : _a2.asyncContext), AsyncLocalStorage: AsyncLocalStorage });
@@ -1132,16 +1132,16 @@ function dn() {
 const de$1 = "Invariant Violation", { setPrototypeOf: hn = function(e, t) {
   return e.__proto__ = t, e;
 } } = Object;
-let Ae$1 = class Ae extends Error {
+let xe$1 = class xe extends Error {
   constructor(t = de$1) {
     super(typeof t == "number" ? `${de$1}: ${t} (see https://github.com/apollographql/invariant-packages)` : t);
     __publicField$1(this, "framesToPop", 1);
     __publicField$1(this, "name", de$1);
-    hn(this, Ae.prototype);
+    hn(this, xe.prototype);
   }
 };
 function gn(e, t) {
-  if (!e) throw new Ae$1(t);
+  if (!e) throw new xe$1(t);
 }
 const he$1 = "solidFetchEvent";
 function bn(e) {
@@ -1157,7 +1157,7 @@ function yn(e) {
   }
   return e.context[he$1];
 }
-function We$1(e, t) {
+function Ge$1(e, t) {
   for (const [r, n] of t.entries()) yt(e, r, n);
 }
 class wn {
@@ -1215,8 +1215,8 @@ function vn(e) {
 const q$1 = { NORMAL: 0, WILDCARD: 1, PLACEHOLDER: 2 };
 function Sn(e = {}) {
   const t = { options: e, rootNode: wt(), staticRoutesMap: {} }, r = (n) => e.strictTrailingSlash ? n : n.replace(/\/$/, "") || "/";
-  if (e.routes) for (const n in e.routes) Ge$1(t, r(n), e.routes[n]);
-  return { ctx: t, lookup: (n) => En(t, r(n)), insert: (n, a) => Ge$1(t, r(n), a), remove: (n) => kn(t, r(n)) };
+  if (e.routes) for (const n in e.routes) We$1(t, r(n), e.routes[n]);
+  return { ctx: t, lookup: (n) => En(t, r(n)), insert: (n, a) => We$1(t, r(n), a), remove: (n) => kn(t, r(n)) };
 }
 function En(e, t) {
   const r = e.staticRoutesMap[t];
@@ -1238,7 +1238,7 @@ function En(e, t) {
   }
   return (u === null || u.data === null) && i !== null && (u = i, a[u.paramName || "_"] = c, o = true), u ? o ? { ...u.data, params: o ? a : void 0 } : u.data : null;
 }
-function Ge$1(e, t, r) {
+function We$1(e, t, r) {
   let n = true;
   const a = t.split("/");
   let o = e.rootNode, i = 0;
@@ -1271,50 +1271,50 @@ function wt(e = {}) {
 function Rn(e) {
   return e.startsWith("**") ? q$1.WILDCARD : e[0] === ":" || e === "*" ? q$1.PLACEHOLDER : q$1.NORMAL;
 }
-const vt = [{ page: false, $GET: { src: "src/routes/api/integrations/printful/connect.ts?pick=GET", build: () => import('../build/connect.mjs'), import: () => import('../build/connect.mjs') }, $HEAD: { src: "src/routes/api/integrations/printful/connect.ts?pick=GET", build: () => import('../build/connect.mjs'), import: () => import('../build/connect.mjs') }, $POST: { src: "src/routes/api/integrations/printful/connect.ts?pick=POST", build: () => import('../build/connect2.mjs'), import: () => import('../build/connect2.mjs') }, path: "/api/integrations/printful/connect", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/integrations/printful/connect.ts" }, { page: false, $GET: { src: "src/routes/api/integrations/printify/connect.ts?pick=GET", build: () => import('../build/connect3.mjs'), import: () => import('../build/connect3.mjs') }, $HEAD: { src: "src/routes/api/integrations/printify/connect.ts?pick=GET", build: () => import('../build/connect3.mjs'), import: () => import('../build/connect3.mjs') }, $POST: { src: "src/routes/api/integrations/printify/connect.ts?pick=POST", build: () => import('../build/connect4.mjs'), import: () => import('../build/connect4.mjs') }, path: "/api/integrations/printify/connect", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/integrations/printify/connect.ts" }, { page: false, $POST: { src: "src/routes/api/payments/subscribe.ts?pick=POST", build: () => import('../build/subscribe.mjs'), import: () => import('../build/subscribe.mjs') }, path: "/api/payments/subscribe", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/payments/subscribe.ts" }, { page: false, $POST: { src: "src/routes/api/payments/webhook.ts?pick=POST", build: () => import('../build/webhook.mjs'), import: () => import('../build/webhook.mjs') }, path: "/api/payments/webhook", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/payments/webhook.ts" }, { page: true, path: "/dashboard/analytics", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/analytics.tsx" }, { page: true, path: "/dashboard/brands/:id", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/brands/[id].tsx" }, { page: true, path: "/dashboard/brands/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/brands/index.tsx" }, { page: true, path: "/dashboard/brands/new", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/brands/new.tsx" }, { page: true, path: "/dashboard/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/index.tsx" }, { page: true, path: "/dashboard/integrations/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/integrations/index.tsx" }, { page: true, path: "/dashboard/mockups/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/mockups/index.tsx" }, { page: true, path: "/dashboard/products/:id", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/products/[id].tsx" }, { page: true, path: "/dashboard/products/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/products/index.tsx" }, { page: true, path: "/dashboard/settings/billing", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/settings/billing.tsx" }, { page: true, path: "/dashboard/settings/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/settings/index.tsx" }, { page: true, path: "/dashboard/templates/:id", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/templates/[id].tsx" }, { page: true, path: "/dashboard/templates/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/templates/index.tsx" }, { page: true, path: "/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/index.tsx" }, { page: true, path: "/login", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/login.tsx" }, { page: true, path: "/pricing", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/pricing.tsx" }, { page: true, path: "/register", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/register.tsx" }], xn = An(vt.filter((e) => e.page));
-function An(e) {
+const vt = [{ page: false, $DELETE: { src: "src/routes/api/[...path].ts?pick=DELETE", build: () => import('../build/_...path_.mjs'), import: () => import('../build/_...path_.mjs') }, $GET: { src: "src/routes/api/[...path].ts?pick=GET", build: () => import('../build/_...path_2.mjs'), import: () => import('../build/_...path_2.mjs') }, $HEAD: { src: "src/routes/api/[...path].ts?pick=GET", build: () => import('../build/_...path_2.mjs'), import: () => import('../build/_...path_2.mjs') }, $PATCH: { src: "src/routes/api/[...path].ts?pick=PATCH", build: () => import('../build/_...path_3.mjs'), import: () => import('../build/_...path_3.mjs') }, $POST: { src: "src/routes/api/[...path].ts?pick=POST", build: () => import('../build/_...path_4.mjs'), import: () => import('../build/_...path_4.mjs') }, path: "/api/*path", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/[...path].ts" }, { page: false, $POST: { src: "src/routes/api/auth/login.ts?pick=POST", build: () => import('../build/login.mjs'), import: () => import('../build/login.mjs') }, path: "/api/auth/login", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/auth/login.ts" }, { page: false, $POST: { src: "src/routes/api/auth/logout.ts?pick=POST", build: () => import('../build/logout.mjs'), import: () => import('../build/logout.mjs') }, path: "/api/auth/logout", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/auth/logout.ts" }, { page: false, $POST: { src: "src/routes/api/auth/register.ts?pick=POST", build: () => import('../build/register.mjs'), import: () => import('../build/register.mjs') }, path: "/api/auth/register", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/auth/register.ts" }, { page: false, $GET: { src: "src/routes/api/auth/session.ts?pick=GET", build: () => import('../build/session.mjs'), import: () => import('../build/session.mjs') }, $HEAD: { src: "src/routes/api/auth/session.ts?pick=GET", build: () => import('../build/session.mjs'), import: () => import('../build/session.mjs') }, path: "/api/auth/session", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/auth/session.ts" }, { page: false, $GET: { src: "src/routes/api/integrations/printful/connect.ts?pick=GET", build: () => import('../build/connect.mjs'), import: () => import('../build/connect.mjs') }, $HEAD: { src: "src/routes/api/integrations/printful/connect.ts?pick=GET", build: () => import('../build/connect.mjs'), import: () => import('../build/connect.mjs') }, $POST: { src: "src/routes/api/integrations/printful/connect.ts?pick=POST", build: () => import('../build/connect2.mjs'), import: () => import('../build/connect2.mjs') }, path: "/api/integrations/printful/connect", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/integrations/printful/connect.ts" }, { page: false, $GET: { src: "src/routes/api/integrations/printify/connect.ts?pick=GET", build: () => import('../build/connect3.mjs'), import: () => import('../build/connect3.mjs') }, $HEAD: { src: "src/routes/api/integrations/printify/connect.ts?pick=GET", build: () => import('../build/connect3.mjs'), import: () => import('../build/connect3.mjs') }, $POST: { src: "src/routes/api/integrations/printify/connect.ts?pick=POST", build: () => import('../build/connect4.mjs'), import: () => import('../build/connect4.mjs') }, path: "/api/integrations/printify/connect", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/integrations/printify/connect.ts" }, { page: false, $POST: { src: "src/routes/api/payments/subscribe.ts?pick=POST", build: () => import('../build/subscribe.mjs'), import: () => import('../build/subscribe.mjs') }, path: "/api/payments/subscribe", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/payments/subscribe.ts" }, { page: false, $POST: { src: "src/routes/api/payments/webhook.ts?pick=POST", build: () => import('../build/webhook.mjs'), import: () => import('../build/webhook.mjs') }, path: "/api/payments/webhook", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/payments/webhook.ts" }, { page: true, path: "/dashboard/analytics", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/analytics.tsx" }, { page: true, path: "/dashboard/brands/:id", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/brands/[id].tsx" }, { page: true, path: "/dashboard/brands/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/brands/index.tsx" }, { page: true, path: "/dashboard/brands/new", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/brands/new.tsx" }, { page: true, path: "/dashboard/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/index.tsx" }, { page: true, path: "/dashboard/integrations/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/integrations/index.tsx" }, { page: true, path: "/dashboard/mockups/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/mockups/index.tsx" }, { page: true, path: "/dashboard/products/:id", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/products/[id].tsx" }, { page: true, path: "/dashboard/products/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/products/index.tsx" }, { page: true, path: "/dashboard/settings/billing", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/settings/billing.tsx" }, { page: true, path: "/dashboard/settings/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/settings/index.tsx" }, { page: true, path: "/dashboard/templates/:id", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/templates/[id].tsx" }, { page: true, path: "/dashboard/templates/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/templates/index.tsx" }, { page: true, path: "/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/index.tsx" }, { page: true, path: "/login", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/login.tsx" }, { page: true, path: "/pricing", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/pricing.tsx" }, { page: true, path: "/register", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/register.tsx" }], An = xn(vt.filter((e) => e.page));
+function xn(e) {
   function t(r, n, a, o) {
     const i = Object.values(r).find((u) => a.startsWith(u.id + "/"));
     return i ? (t(i.children || (i.children = []), n, a.slice(i.id.length)), r) : (r.push({ ...n, id: a, path: a.replace(/\([^)/]+\)/g, "").replace(/\/+/g, "/") }), r);
   }
   return e.sort((r, n) => r.path.length - n.path.length).reduce((r, n) => t(r, n, n.path, n.path), []);
 }
-function _n(e) {
+function Pn(e) {
   return e.$HEAD || e.$GET || e.$POST || e.$PUT || e.$PATCH || e.$DELETE;
 }
 Sn({ routes: vt.reduce((e, t) => {
-  if (!_n(t)) return e;
+  if (!Pn(t)) return e;
   let r = t.path.replace(/\([^)/]+\)/g, "").replace(/\/+/g, "/").replace(/\*([^/]*)/g, (n, a) => `**:${a}`).split("/").map((n) => n.startsWith(":") || n.startsWith("*") ? n : encodeURIComponent(n)).join("/");
   if (/:[^/]*\?/g.test(r)) throw new Error(`Optional parameters are not supported in API routes: ${r}`);
   if (e[r]) throw new Error(`Duplicate API routes for "${r}" found at "${e[r].route.path}" and "${t.path}"`);
   return e[r] = { route: t }, e;
 }, {}) });
 var $n = " ";
-const zn = { style: (e) => ssrElement("style", e.attrs, () => e.children, true), link: (e) => ssrElement("link", e.attrs, void 0, true), script: (e) => e.attrs.src ? ssrElement("script", mergeProps(() => e.attrs, { get id() {
+const Tn = { style: (e) => ssrElement("style", e.attrs, () => e.children, true), link: (e) => ssrElement("link", e.attrs, void 0, true), script: (e) => e.attrs.src ? ssrElement("script", mergeProps(() => e.attrs, { get id() {
   return e.key;
 } }), () => ssr($n), true) : null, noscript: (e) => ssrElement("noscript", e.attrs, () => escape(e.children), true) };
-function Cn(e, t) {
+function On(e, t) {
   let { tag: r, attrs: { key: n, ...a } = { key: void 0 }, children: o } = e;
-  return zn[r]({ attrs: { ...a, nonce: t }, key: n, children: o });
+  return Tn[r]({ attrs: { ...a, nonce: t }, key: n, children: o });
 }
-function On(e, t, r, n = "default") {
+function zn(e, t, r, n = "default") {
   return lazy(async () => {
     var _a2;
     {
       const o = (await e.import())[n], u = (await ((_a2 = t.inputs) == null ? void 0 : _a2[e.src].assets())).filter((l) => l.tag === "style" || l.attrs.rel === "stylesheet");
-      return { default: (l) => [...u.map((p) => Cn(p)), createComponent(o, l)] };
+      return { default: (l) => [...u.map((p) => On(p)), createComponent(o, l)] };
     }
   });
 }
 function St() {
   function e(r) {
-    return { ...r, ...r.$$route ? r.$$route.require().route : void 0, info: { ...r.$$route ? r.$$route.require().route.info : {}, filesystem: true }, component: r.$component && On(r.$component, globalThis.MANIFEST.client, globalThis.MANIFEST.ssr), children: r.children ? r.children.map(e) : void 0 };
+    return { ...r, ...r.$$route ? r.$$route.require().route : void 0, info: { ...r.$$route ? r.$$route.require().route.info : {}, filesystem: true }, component: r.$component && zn(r.$component, globalThis.MANIFEST.client, globalThis.MANIFEST.ssr), children: r.children ? r.children.map(e) : void 0 };
   }
-  return xn.map(e);
+  return An.map(e);
 }
 let Xe$1;
 const au = isServer ? () => getRequestEvent().routes : () => Xe$1 || (Xe$1 = St());
-function Tn(e) {
+function Cn(e) {
   const t = on(e.nativeEvent, "flash");
   if (t) try {
     let r = JSON.parse(t);
@@ -1329,21 +1329,21 @@ function Tn(e) {
 }
 async function In(e) {
   const t = globalThis.MANIFEST.client;
-  return globalThis.MANIFEST.ssr, e.response.headers.set("Content-Type", "text/html"), Object.assign(e, { manifest: await t.json(), assets: [...await t.inputs[t.handler].assets()], router: { submission: Tn(e) }, routes: St(), complete: false, $islands: /* @__PURE__ */ new Set() });
+  return globalThis.MANIFEST.ssr, e.response.headers.set("Content-Type", "text/html"), Object.assign(e, { manifest: await t.json(), assets: [...await t.inputs[t.handler].assets()], router: { submission: Cn(e) }, routes: St(), complete: false, $islands: /* @__PURE__ */ new Set() });
 }
 const Ln = /* @__PURE__ */ new Set([301, 302, 303, 307, 308]);
 function Nn(e) {
   return e.status && Ln.has(e.status) ? e.status : 302;
 }
 const Fn = {};
-var Et = ((e) => (e[e.AggregateError = 1] = "AggregateError", e[e.ArrowFunction = 2] = "ArrowFunction", e[e.ErrorPrototypeStack = 4] = "ErrorPrototypeStack", e[e.ObjectAssign = 8] = "ObjectAssign", e[e.BigIntTypedArray = 16] = "BigIntTypedArray", e[e.RegExp = 32] = "RegExp", e))(Et || {}), A$1 = Symbol.asyncIterator, kt = Symbol.hasInstance, M$1 = Symbol.isConcatSpreadable, _$1 = Symbol.iterator, Rt = Symbol.match, xt = Symbol.matchAll, At = Symbol.replace, _t = Symbol.search, Pt = Symbol.species, $t = Symbol.split, zt = Symbol.toPrimitive, B = Symbol.toStringTag, Ct = Symbol.unscopables, Un = { 0: "Symbol.asyncIterator", 1: "Symbol.hasInstance", 2: "Symbol.isConcatSpreadable", 3: "Symbol.iterator", 4: "Symbol.match", 5: "Symbol.matchAll", 6: "Symbol.replace", 7: "Symbol.search", 8: "Symbol.species", 9: "Symbol.split", 10: "Symbol.toPrimitive", 11: "Symbol.toStringTag", 12: "Symbol.unscopables" }, Ot = { [A$1]: 0, [kt]: 1, [M$1]: 2, [_$1]: 3, [Rt]: 4, [xt]: 5, [At]: 6, [_t]: 7, [Pt]: 8, [$t]: 9, [zt]: 10, [B]: 11, [Ct]: 12 }, jn = { 0: A$1, 1: kt, 2: M$1, 3: _$1, 4: Rt, 5: xt, 6: At, 7: _t, 8: Pt, 9: $t, 10: zt, 11: B, 12: Ct }, Dn = { 2: "!0", 3: "!1", 1: "void 0", 0: "null", 4: "-0", 5: "1/0", 6: "-1/0", 7: "0/0" }, s = void 0, Hn = { 2: true, 3: false, 1: s, 0: null, 4: -0, 5: Number.POSITIVE_INFINITY, 6: Number.NEGATIVE_INFINITY, 7: Number.NaN }, Tt = { 0: "Error", 1: "EvalError", 2: "RangeError", 3: "ReferenceError", 4: "SyntaxError", 5: "TypeError", 6: "URIError" }, qn = { 0: Error, 1: EvalError, 2: RangeError, 3: ReferenceError, 4: SyntaxError, 5: TypeError, 6: URIError };
+var Et = ((e) => (e[e.AggregateError = 1] = "AggregateError", e[e.ArrowFunction = 2] = "ArrowFunction", e[e.ErrorPrototypeStack = 4] = "ErrorPrototypeStack", e[e.ObjectAssign = 8] = "ObjectAssign", e[e.BigIntTypedArray = 16] = "BigIntTypedArray", e[e.RegExp = 32] = "RegExp", e))(Et || {}), x = Symbol.asyncIterator, kt = Symbol.hasInstance, M = Symbol.isConcatSpreadable, P = Symbol.iterator, Rt = Symbol.match, At = Symbol.matchAll, xt = Symbol.replace, Pt = Symbol.search, _t = Symbol.species, $t = Symbol.split, Tt = Symbol.toPrimitive, B = Symbol.toStringTag, Ot = Symbol.unscopables, Un = { 0: "Symbol.asyncIterator", 1: "Symbol.hasInstance", 2: "Symbol.isConcatSpreadable", 3: "Symbol.iterator", 4: "Symbol.match", 5: "Symbol.matchAll", 6: "Symbol.replace", 7: "Symbol.search", 8: "Symbol.species", 9: "Symbol.split", 10: "Symbol.toPrimitive", 11: "Symbol.toStringTag", 12: "Symbol.unscopables" }, zt = { [x]: 0, [kt]: 1, [M]: 2, [P]: 3, [Rt]: 4, [At]: 5, [xt]: 6, [Pt]: 7, [_t]: 8, [$t]: 9, [Tt]: 10, [B]: 11, [Ot]: 12 }, Dn = { 0: x, 1: kt, 2: M, 3: P, 4: Rt, 5: At, 6: xt, 7: Pt, 8: _t, 9: $t, 10: Tt, 11: B, 12: Ot }, Hn = { 2: "!0", 3: "!1", 1: "void 0", 0: "null", 4: "-0", 5: "1/0", 6: "-1/0", 7: "0/0" }, s = void 0, jn = { 2: true, 3: false, 1: s, 0: null, 4: -0, 5: Number.POSITIVE_INFINITY, 6: Number.NEGATIVE_INFINITY, 7: Number.NaN }, Ct = { 0: "Error", 1: "EvalError", 2: "RangeError", 3: "ReferenceError", 4: "SyntaxError", 5: "TypeError", 6: "URIError" }, qn = { 0: Error, 1: EvalError, 2: RangeError, 3: ReferenceError, 4: SyntaxError, 5: TypeError, 6: URIError };
 function g$1(e, t, r, n, a, o, i, u, c, l, p, d) {
   return { t: e, i: t, s: r, c: n, m: a, p: o, e: i, a: u, f: c, b: l, o: p, l: d };
 }
-function O(e) {
+function C$1(e) {
   return g$1(2, s, e, s, s, s, s, s, s, s, s, s);
 }
-var It = O(2), Lt = O(3), Mn = O(1), Bn = O(0), Vn = O(4), Wn = O(5), Gn = O(6), Xn = O(7);
+var It = C$1(2), Lt = C$1(3), Mn = C$1(1), Bn = C$1(0), Vn = C$1(4), Gn = C$1(5), Wn = C$1(6), Xn = C$1(7);
 function Jn(e) {
   switch (e) {
     case '"':
@@ -1410,27 +1410,27 @@ var X = "__SEROVAL_REFS__", ue$1 = "$R", ae = `self.${ue$1}`;
 function Kn(e) {
   return e == null ? `${ae}=${ae}||[]` : `(${ae}=${ae}||{})["${R$1(e)}"]=[]`;
 }
-var Nt = /* @__PURE__ */ new Map(), H$1 = /* @__PURE__ */ new Map();
+var Nt = /* @__PURE__ */ new Map(), j = /* @__PURE__ */ new Map();
 function Ft(e) {
   return Nt.has(e);
 }
 function Qn(e) {
-  return H$1.has(e);
+  return j.has(e);
 }
 function Zn(e) {
   if (Ft(e)) return Nt.get(e);
-  throw new Ps(e);
+  throw new _s(e);
 }
 function es(e) {
-  if (Qn(e)) return H$1.get(e);
+  if (Qn(e)) return j.get(e);
   throw new $s(e);
 }
-typeof globalThis < "u" ? Object.defineProperty(globalThis, X, { value: H$1, configurable: true, writable: false, enumerable: false }) : typeof self < "u" ? Object.defineProperty(self, X, { value: H$1, configurable: true, writable: false, enumerable: false }) : typeof global < "u" && Object.defineProperty(global, X, { value: H$1, configurable: true, writable: false, enumerable: false });
-function _e$1(e) {
+typeof globalThis < "u" ? Object.defineProperty(globalThis, X, { value: j, configurable: true, writable: false, enumerable: false }) : typeof self < "u" ? Object.defineProperty(self, X, { value: j, configurable: true, writable: false, enumerable: false }) : typeof global < "u" && Object.defineProperty(global, X, { value: j, configurable: true, writable: false, enumerable: false });
+function Pe$1(e) {
   return e instanceof EvalError ? 1 : e instanceof RangeError ? 2 : e instanceof ReferenceError ? 3 : e instanceof SyntaxError ? 4 : e instanceof TypeError ? 5 : e instanceof URIError ? 6 : 0;
 }
 function ts(e) {
-  let t = Tt[_e$1(e)];
+  let t = Ct[Pe$1(e)];
   return e.name !== t ? { name: e.name } : e.constructor.name !== t ? { name: e.constructor.name } : {};
 }
 function Ut(e, t) {
@@ -1438,19 +1438,19 @@ function Ut(e, t) {
   for (let a = 0, o = n.length, i; a < o; a++) i = n[a], i !== "name" && i !== "message" && (i === "stack" ? t & 4 && (r = r || {}, r[i] = e[i]) : (r = r || {}, r[i] = e[i]));
   return r;
 }
-function jt(e) {
+function Dt(e) {
   return Object.isFrozen(e) ? 3 : Object.isSealed(e) ? 2 : Object.isExtensible(e) ? 0 : 1;
 }
 function rs(e) {
   switch (e) {
     case Number.POSITIVE_INFINITY:
-      return Wn;
-    case Number.NEGATIVE_INFINITY:
       return Gn;
+    case Number.NEGATIVE_INFINITY:
+      return Wn;
   }
   return e !== e ? Xn : Object.is(e, -0) ? Vn : g$1(0, s, e, s, s, s, s, s, s, s, s, s);
 }
-function Dt(e) {
+function Ht(e) {
   return g$1(1, s, R$1(e), s, s, s, s, s, s, s, s, s);
 }
 function ns(e) {
@@ -1467,16 +1467,16 @@ function os(e, t) {
   return g$1(6, e, s, R$1(t.source), t.flags, s, s, s, s, s, s, s);
 }
 function is(e, t) {
-  return g$1(17, e, Ot[t], s, s, s, s, s, s, s, s, s);
+  return g$1(17, e, zt[t], s, s, s, s, s, s, s, s, s);
 }
 function us(e, t) {
   return g$1(18, e, R$1(Zn(t)), s, s, s, s, s, s, s, s, s);
 }
-function Ht(e, t, r) {
+function jt(e, t, r) {
   return g$1(25, e, r, R$1(t), s, s, s, s, s, s, s, s);
 }
 function cs(e, t, r) {
-  return g$1(9, e, s, s, s, s, s, r, s, s, jt(t), s);
+  return g$1(9, e, s, s, s, s, s, r, s, s, Dt(t), s);
 }
 function ls(e, t) {
   return g$1(21, e, s, s, s, s, s, s, t, s, s, s);
@@ -1491,10 +1491,10 @@ function ds(e, t, r) {
   return g$1(20, e, s, s, s, s, s, s, r, t.byteOffset, s, t.byteLength);
 }
 function hs(e, t, r) {
-  return g$1(13, e, _e$1(t), s, R$1(t.message), r, s, s, s, s, s, s);
+  return g$1(13, e, Pe$1(t), s, R$1(t.message), r, s, s, s, s, s, s);
 }
 function gs(e, t, r) {
-  return g$1(14, e, _e$1(t), s, R$1(t.message), r, s, s, s, s, s, s);
+  return g$1(14, e, Pe$1(t), s, R$1(t.message), r, s, s, s, s, s, s);
 }
 function bs(e, t) {
   return g$1(7, e, s, s, s, s, s, t, s, s, s, s);
@@ -1521,62 +1521,62 @@ function ks(e, t, r, n) {
   return g$1(35, e, r, s, s, s, s, t, s, s, s, n);
 }
 var Rs = { parsing: 1, serialization: 2, deserialization: 3 };
-function xs(e) {
+function As(e) {
   return `Seroval Error (step: ${Rs[e]})`;
 }
-var As = (e, t) => xs(e), qt = class extends Error {
+var xs = (e, t) => As(e), qt = class extends Error {
   constructor(t, r) {
-    super(As(t)), this.cause = r;
+    super(xs(t)), this.cause = r;
   }
 }, Je$1 = class Je extends qt {
   constructor(e) {
     super("parsing", e);
   }
-}, _s = class extends qt {
+}, Ps = class extends qt {
   constructor(e) {
     super("deserialization", e);
   }
 };
-function P$1(e) {
+function _(e) {
   return `Seroval Error (specific: ${e})`;
 }
 var ce$1 = class ce extends Error {
   constructor(t) {
-    super(P$1(1)), this.value = t;
+    super(_(1)), this.value = t;
   }
 }, F = class extends Error {
   constructor(t) {
-    super(P$1(2));
+    super(_(2));
   }
 }, Mt = class extends Error {
   constructor(e) {
-    super(P$1(3));
+    super(_(3));
   }
 }, Z = class extends Error {
   constructor(t) {
-    super(P$1(4));
+    super(_(4));
   }
-}, Ps = class extends Error {
+}, _s = class extends Error {
   constructor(e) {
-    super(P$1(5)), this.value = e;
+    super(_(5)), this.value = e;
   }
 }, $s = class extends Error {
   constructor(e) {
-    super(P$1(6));
+    super(_(6));
   }
-}, zs = class extends Error {
+}, Ts = class extends Error {
   constructor(e) {
-    super(P$1(7));
+    super(_(7));
   }
 }, $$1 = class $ extends Error {
   constructor(t) {
-    super(P$1(8));
+    super(_(8));
   }
 }, Bt = class extends Error {
   constructor(e) {
-    super(P$1(9));
+    super(_(9));
   }
-}, Cs = class {
+}, Os = class {
   constructor(e, t) {
     this.value = e, this.replacement = t;
   }
@@ -1585,11 +1585,11 @@ var ce$1 = class ce extends Error {
   return e.p = new Promise((t, r) => {
     e.s = t, e.f = r;
   }), e;
-}, Os = (e, t) => {
+}, zs = (e, t) => {
   e.s(t), e.p.s = 1, e.p.v = t;
-}, Ts = (e, t) => {
+}, Cs = (e, t) => {
   e.f(t), e.p.s = 2, e.p.v = t;
-}, Is = le$1.toString(), Ls = Os.toString(), Ns = Ts.toString(), Vt = () => {
+}, Is = le$1.toString(), Ls = zs.toString(), Ns = Cs.toString(), Vt = () => {
   let e = [], t = [], r = true, n = false, a = 0, o = (c, l, p) => {
     for (p = 0; p < a; p++) t[p] && t[p][l](c);
   }, i = (c, l, p, d) => {
@@ -1604,7 +1604,7 @@ var ce$1 = class ce extends Error {
   }, return: (c) => {
     r && (e.push(c), o(c, "return"), r = false, n = true, t.length = 0);
   } };
-}, Fs = Vt.toString(), Wt = (e) => (t) => () => {
+}, Fs = Vt.toString(), Gt = (e) => (t) => () => {
   let r = 0, n = { [e]: () => n, next: () => {
     if (r > t.d) return { done: true, value: void 0 };
     let a = r++, o = t.v[a];
@@ -1612,7 +1612,7 @@ var ce$1 = class ce extends Error {
     return { done: a === t.d, value: o };
   } };
   return n;
-}, Us = Wt.toString(), Gt = (e, t) => (r) => () => {
+}, Us = Gt.toString(), Wt = (e, t) => (r) => () => {
   let n = 0, a = -1, o = false, i = [], u = [], c = (p = 0, d = u.length) => {
     for (; p < d; p++) u[p].s({ done: true, value: void 0 });
   };
@@ -1642,19 +1642,19 @@ var ce$1 = class ce extends Error {
     return { done: true, value: d };
   } };
   return l;
-}, js = Gt.toString(), Xt = (e) => {
+}, Ds = Wt.toString(), Xt = (e) => {
   let t = atob(e), r = t.length, n = new Uint8Array(r);
   for (let a = 0; a < r; a++) n[a] = t.charCodeAt(a);
   return n.buffer;
-}, Ds = Xt.toString();
-function Hs(e) {
+}, Hs = Xt.toString();
+function js(e) {
   return "__SEROVAL_SEQUENCE__" in e;
 }
 function Jt(e, t, r) {
   return { __SEROVAL_SEQUENCE__: true, v: e, t, d: r };
 }
 function qs(e) {
-  let t = [], r = -1, n = -1, a = e[_$1]();
+  let t = [], r = -1, n = -1, a = e[P]();
   for (; ; ) try {
     let o = a.next();
     if (t.push(o.value), o.done) {
@@ -1666,11 +1666,11 @@ function qs(e) {
   }
   return Jt(t, r, n);
 }
-var Ms = Wt(_$1);
+var Ms = Gt(P);
 function Bs(e) {
   return Ms(e);
 }
-var Vs = {}, Ws = {}, Gs = { 0: {}, 1: {}, 2: {}, 3: {}, 4: {}, 5: {} }, Xs = { 0: "[]", 1: Is, 2: Ls, 3: Ns, 4: Fs, 5: Ds };
+var Vs = {}, Gs = {}, Ws = { 0: {}, 1: {}, 2: {}, 3: {}, 4: {}, 5: {} }, Xs = { 0: "[]", 1: Is, 2: Ls, 3: Ns, 4: Fs, 5: Hs };
 function Js(e) {
   return "__SEROVAL_STREAM__" in e;
 }
@@ -1678,7 +1678,7 @@ function ee() {
   return Vt();
 }
 function Ys(e) {
-  let t = ee(), r = e[A$1]();
+  let t = ee(), r = e[x]();
   async function n() {
     try {
       let a = await r.next();
@@ -1690,7 +1690,7 @@ function Ys(e) {
   return n().catch(() => {
   }), t;
 }
-var Ks = Gt(A$1, le$1);
+var Ks = Wt(x, le$1);
 function Qs(e) {
   return Ks(e);
 }
@@ -1708,30 +1708,30 @@ function fe$1(e, t) {
   let r = e.refs.get(t);
   return r != null ? (ea(e, r), { type: 1, value: ss(r) }) : { type: 0, value: Yt(e, t) };
 }
-function Pe$1(e, t) {
+function _e$1(e, t) {
   let r = fe$1(e, t);
   return r.type === 1 ? r : Ft(t) ? { type: 2, value: us(r.value, t) } : r;
 }
 function L(e, t) {
-  let r = Pe$1(e, t);
+  let r = _e$1(e, t);
   if (r.type !== 0) return r.value;
-  if (t in Ot) return is(r.value, t);
+  if (t in zt) return is(r.value, t);
   throw new ce$1(t);
 }
 function U(e, t) {
-  let r = fe$1(e, Gs[t]);
+  let r = fe$1(e, Ws[t]);
   return r.type === 1 ? r.value : g$1(26, r.value, t, s, s, s, s, s, s, s, s, s);
 }
 function ta(e) {
   let t = fe$1(e, Vs);
-  return t.type === 1 ? t.value : g$1(27, t.value, s, s, s, s, s, s, L(e, _$1), s, s, s);
+  return t.type === 1 ? t.value : g$1(27, t.value, s, s, s, s, s, s, L(e, P), s, s, s);
 }
 function ra(e) {
-  let t = fe$1(e, Ws);
-  return t.type === 1 ? t.value : g$1(29, t.value, s, s, s, s, s, [U(e, 1), L(e, A$1)], s, s, s, s);
+  let t = fe$1(e, Gs);
+  return t.type === 1 ? t.value : g$1(29, t.value, s, s, s, s, s, [U(e, 1), L(e, x)], s, s, s, s);
 }
 function na(e, t, r, n) {
-  return g$1(r ? 11 : 10, e, s, s, s, n, s, s, s, s, jt(t), s);
+  return g$1(r ? 11 : 10, e, s, s, s, n, s, s, s, s, Dt(t), s);
 }
 function sa(e, t, r, n) {
   return g$1(8, t, s, s, s, s, { k: r, v: n }, s, U(e, 0), s, s, s);
@@ -1782,7 +1782,7 @@ function ua(e) {
     case "BigUint64Array":
       return BigUint64Array;
     default:
-      throw new zs(e);
+      throw new Ts(e);
   }
 }
 var ca = 1e6, la = 1e4, fa = 2e4;
@@ -1856,10 +1856,10 @@ function va(e) {
 }
 function Sa(e) {
   switch (e) {
-    case A$1:
-    case M$1:
+    case x:
+    case M:
     case B:
-    case _$1:
+    case P:
       return true;
     default:
       return false;
@@ -1902,7 +1902,7 @@ function ka(e, t, r) {
 function Ra(e, t) {
   return y$1(e, t.i, new Date(t.s));
 }
-function xa(e, t) {
+function Aa(e, t) {
   if (e.base.features & 32) {
     let r = I$1(t.c);
     if (r.length > fa) throw new $$1(t);
@@ -1910,17 +1910,17 @@ function xa(e, t) {
   }
   throw new F(t);
 }
-function Aa(e, t, r) {
+function xa(e, t, r) {
   let n = y$1(e, r.i, /* @__PURE__ */ new Set());
   for (let a = 0, o = r.a, i = o.length; a < i; a++) n.add(m(e, t, o[a]));
   return n;
 }
-function _a(e, t, r) {
+function Pa(e, t, r) {
   let n = y$1(e, r.i, /* @__PURE__ */ new Map());
   for (let a = 0, o = r.e.k, i = r.e.v, u = o.length; a < u; a++) n.set(m(e, t, o[a]), m(e, t, i[a]));
   return n;
 }
-function Pa(e, t) {
+function _a(e, t) {
   if (t.s.length > ca) throw new $$1(t);
   return y$1(e, t.i, Xt(I$1(t.s)));
 }
@@ -1930,7 +1930,7 @@ function $a(e, t, r) {
   if (i < 0 || i > o.byteLength) throw new $$1(r);
   return y$1(e, r.i, new a(o, i, r.l));
 }
-function za(e, t, r) {
+function Ta(e, t, r) {
   var n;
   let a = m(e, t, r.f), o = (n = r.b) != null ? n : 0;
   if (o < 0 || o > a.byteLength) throw new $$1(r);
@@ -1943,15 +1943,15 @@ function rr(e, t, r, n) {
   }
   return n;
 }
-function Ca(e, t, r) {
+function Oa(e, t, r) {
   let n = y$1(e, r.i, new AggregateError([], I$1(r.m)));
   return rr(e, t, r, n);
 }
-function Oa(e, t, r) {
+function za(e, t, r) {
   let n = Ee$1(r, qn, r.s), a = y$1(e, r.i, new n(I$1(r.m)));
   return rr(e, t, r, a);
 }
-function Ta(e, t, r) {
+function Ca(e, t, r) {
   let n = le$1(), a = y$1(e, r.i, n.p), o = m(e, t, r.f);
   return r.s ? n.s(o) : n.f(o), a;
 }
@@ -1983,17 +1983,17 @@ function Ua(e, t, r) {
   if (n) return te(e, r, r.i, 22), n.f(m(e, t, r.a[1])), s;
   throw new Z("Promise");
 }
-function ja(e, t, r) {
+function Da(e, t, r) {
   m(e, t, r.a[0]);
   let n = m(e, t, r.a[1]);
   return Bs(n);
 }
-function Da(e, t, r) {
+function Ha(e, t, r) {
   m(e, t, r.a[0]);
   let n = m(e, t, r.a[1]);
   return Qs(n);
 }
-function Ha(e, t, r) {
+function ja(e, t, r) {
   let n = y$1(e, r.i, ee());
   er(e, r.i, 31);
   let a = r.a, o = a.length;
@@ -2018,10 +2018,10 @@ function Ba(e, t, r) {
 function Va(e, t, r) {
   return m(e, t, r.f), s;
 }
-function Wa(e, t, r) {
+function Ga(e, t, r) {
   return m(e, t, r.a[1]), s;
 }
-function Ga(e, t, r) {
+function Wa(e, t, r) {
   let n = y$1(e, r.i, Jt([], r.s, r.l));
   for (let a = 0, o = r.a.length; a < o; a++) n.v[a] = m(e, t, r.a[a]);
   return n;
@@ -2030,7 +2030,7 @@ function m(e, t, r) {
   if (t > e.base.depthLimit) throw new Bt(e.base.depthLimit);
   switch (t += 1, r.t) {
     case 2:
-      return Ee$1(r, Hn, r.s);
+      return Ee$1(r, jn, r.s);
     case 0:
       return Number(r.s);
     case 1:
@@ -2050,26 +2050,26 @@ function m(e, t, r) {
     case 5:
       return Ra(e, r);
     case 6:
-      return xa(e, r);
+      return Aa(e, r);
     case 7:
-      return Aa(e, t, r);
+      return xa(e, t, r);
     case 8:
-      return _a(e, t, r);
+      return Pa(e, t, r);
     case 19:
-      return Pa(e, r);
+      return _a(e, r);
     case 16:
     case 15:
       return $a(e, t, r);
     case 20:
-      return za(e, t, r);
-    case 14:
-      return Ca(e, t, r);
-    case 13:
-      return Oa(e, t, r);
-    case 12:
       return Ta(e, t, r);
+    case 14:
+      return Oa(e, t, r);
+    case 13:
+      return za(e, t, r);
+    case 12:
+      return Ca(e, t, r);
     case 17:
-      return Ee$1(r, jn, r.s);
+      return Ee$1(r, Dn, r.s);
     case 21:
       return Ia(e, t, r);
     case 25:
@@ -2081,11 +2081,11 @@ function m(e, t, r) {
     case 24:
       return Ua(e, t, r);
     case 28:
-      return ja(e, t, r);
-    case 30:
       return Da(e, t, r);
-    case 31:
+    case 30:
       return Ha(e, t, r);
+    case 31:
+      return ja(e, t, r);
     case 32:
       return qa(e, t, r);
     case 33:
@@ -2095,9 +2095,9 @@ function m(e, t, r) {
     case 27:
       return Va(e, t, r);
     case 29:
-      return Wa(e, t, r);
-    case 35:
       return Ga(e, t, r);
+    case 35:
+      return Wa(e, t, r);
     default:
       throw new F(r);
   }
@@ -2106,7 +2106,7 @@ function Xa(e, t) {
   try {
     return m(e, 0, t);
   } catch (r) {
-    throw new _s(r);
+    throw new Ps(r);
   }
 }
 var Ja = () => T, Ya = Ja.toString(), nr = /=>/.test(Ya);
@@ -2179,14 +2179,14 @@ function fo(e) {
 function b(e, t) {
   return e.mode === 1 ? lo(e.state, t) : fo(t);
 }
-function E(e, t) {
+function E$1(e, t) {
   e.marked.add(t);
 }
 function ke$1(e, t) {
   return e.marked.has(t);
 }
-function ze$1(e, t, r) {
-  t !== 0 && (E(e.base, r), e.base.flags.push({ type: t, value: b(e, r) }));
+function Te$1(e, t, r) {
+  t !== 0 && (E$1(e.base, r), e.base.flags.push({ type: t, value: b(e, r) }));
 }
 function po(e) {
   let t = "";
@@ -2200,38 +2200,38 @@ function ho(e) {
   let t = ur(e.assignments), r = po(e);
   return t ? r ? t + r : t : r;
 }
-function Ce$1(e, t, r) {
+function Oe$1(e, t, r) {
   e.assignments.push({ t: 0, s: t, k: s, v: r });
 }
 function go(e, t, r) {
   e.base.assignments.push({ t: 1, s: b(e, t), k: s, v: r });
 }
-function G(e, t, r, n) {
+function W(e, t, r, n) {
   e.base.assignments.push({ t: 2, s: b(e, t), k: r, v: n });
 }
 function Ze(e, t, r) {
   e.base.assignments.push({ t: 3, s: b(e, t), k: r, v: s });
 }
 function K(e, t, r, n) {
-  Ce$1(e.base, b(e, t) + "[" + r + "]", n);
+  Oe$1(e.base, b(e, t) + "[" + r + "]", n);
 }
 function Re$1(e, t, r, n) {
-  Ce$1(e.base, b(e, t) + "." + r, n);
+  Oe$1(e.base, b(e, t) + "." + r, n);
 }
 function bo(e, t, r, n) {
-  Ce$1(e.base, b(e, t) + ".v[" + r + "]", n);
+  Oe$1(e.base, b(e, t) + ".v[" + r + "]", n);
 }
-function x(e, t) {
+function A$1(e, t) {
   return t.t === 4 && e.stack.includes(t.i);
 }
-function W(e, t, r) {
+function G$1(e, t, r) {
   return e.mode === 1 && !ke$1(e.base, t) ? r : b(e, t) + "=" + r;
 }
 function mo(e) {
   return X + '.get("' + e.s + '")';
 }
 function et(e, t, r, n) {
-  return r ? x(e.base, r) ? (E(e.base, t), K(e, t, n, b(e, r.i)), "") : h(e, r) : "";
+  return r ? A$1(e.base, r) ? (E$1(e.base, t), K(e, t, n, b(e, r.i)), "") : h(e, r) : "";
 }
 function yo(e, t) {
   let r = t.i, n = t.a, a = n.length;
@@ -2239,16 +2239,16 @@ function yo(e, t) {
     e.base.stack.push(r);
     let o = et(e, r, n[0], 0), i = o === "";
     for (let u = 1, c; u < a; u++) c = et(e, r, n[u], u), o += "," + c, i = c === "";
-    return e.base.stack.pop(), ze$1(e, t.o, t.i), "[" + o + (i ? ",]" : "]");
+    return e.base.stack.pop(), Te$1(e, t.o, t.i), "[" + o + (i ? ",]" : "]");
   }
   return "[]";
 }
 function tt(e, t, r, n) {
   if (typeof r == "string") {
     let a = Number(r), o = a >= 0 && a.toString() === r || ir(r);
-    if (x(e.base, n)) {
+    if (A$1(e.base, n)) {
       let i = b(e, n.i);
-      return E(e.base, t.i), o && a !== a ? Re$1(e, t.i, r, i) : K(e, t.i, o ? r : '"' + r + '"', i), "";
+      return E$1(e.base, t.i), o && a !== a ? Re$1(e, t.i, r, i) : K(e, t.i, o ? r : '"' + r + '"', i), "";
     }
     return (o ? r : '"' + r + '"') + ":" + h(e, n);
   }
@@ -2266,7 +2266,7 @@ function cr(e, t, r) {
   return "{}";
 }
 function wo(e, t) {
-  return ze$1(e, t.o, t.i), cr(e, t, t.p);
+  return Te$1(e, t.o, t.i), cr(e, t, t.p);
 }
 function vo(e, t, r, n) {
   let a = cr(e, t, r);
@@ -2274,7 +2274,7 @@ function vo(e, t, r, n) {
 }
 function So(e, t, r, n, a) {
   let o = e.base, i = h(e, a), u = Number(n), c = u >= 0 && u.toString() === n || ir(n);
-  if (x(o, a)) c && u !== u ? Re$1(e, t.i, n, i) : K(e, t.i, c ? n : '"' + n + '"', i);
+  if (A$1(o, a)) c && u !== u ? Re$1(e, t.i, n, i) : K(e, t.i, c ? n : '"' + n + '"', i);
   else {
     let l = o.assignments;
     o.assignments = r, c && u !== u ? Re$1(e, t.i, n, i) : K(e, t.i, c ? n : '"' + n + '"', i), o.assignments = l;
@@ -2301,33 +2301,33 @@ function ko(e, t, r) {
   }
   return s;
 }
-function Oe$1(e, t, r) {
+function ze$1(e, t, r) {
   if (t.p) {
     let n = e.base;
     if (n.features & 8) r = vo(e, t, t.p, r);
     else {
-      E(n, t.i);
+      E$1(n, t.i);
       let a = ko(e, t, t.p);
-      if (a) return "(" + W(e, t.i, r) + "," + a + b(e, t.i) + ")";
+      if (a) return "(" + G$1(e, t.i, r) + "," + a + b(e, t.i) + ")";
     }
   }
   return r;
 }
 function Ro(e, t) {
-  return ze$1(e, t.o, t.i), Oe$1(e, t, to);
+  return Te$1(e, t.o, t.i), ze$1(e, t, to);
 }
-function xo(e) {
+function Ao(e) {
   return 'new Date("' + e.s + '")';
 }
-function Ao(e, t) {
+function xo(e, t) {
   if (e.base.features & 32) return "/" + t.c + "/" + t.m;
   throw new F(t);
 }
 function rt(e, t, r) {
   let n = e.base;
-  return x(n, r) ? (E(n, t), go(e, t, b(e, r.i)), "") : h(e, r);
+  return A$1(n, r) ? (E$1(n, t), go(e, t, b(e, r.i)), "") : h(e, r);
 }
-function _o(e, t) {
+function Po(e, t) {
   let r = ro, n = t.a, a = n.length, o = t.i;
   if (a > 0) {
     e.base.stack.push(o);
@@ -2339,31 +2339,31 @@ function _o(e, t) {
 }
 function nt(e, t, r, n, a) {
   let o = e.base;
-  if (x(o, r)) {
+  if (A$1(o, r)) {
     let i = b(e, r.i);
-    if (E(o, t), x(o, n)) {
+    if (E$1(o, t), A$1(o, n)) {
       let c = b(e, n.i);
-      return G(e, t, i, c), "";
+      return W(e, t, i, c), "";
     }
     if (n.t !== 4 && n.i != null && ke$1(o, n.i)) {
       let c = "(" + h(e, n) + ",[" + a + "," + a + "])";
-      return G(e, t, i, b(e, n.i)), Ze(e, t, a), c;
+      return W(e, t, i, b(e, n.i)), Ze(e, t, a), c;
     }
     let u = o.stack;
-    return o.stack = [], G(e, t, i, h(e, n)), o.stack = u, "";
+    return o.stack = [], W(e, t, i, h(e, n)), o.stack = u, "";
   }
-  if (x(o, n)) {
+  if (A$1(o, n)) {
     let i = b(e, n.i);
-    if (E(o, t), r.t !== 4 && r.i != null && ke$1(o, r.i)) {
+    if (E$1(o, t), r.t !== 4 && r.i != null && ke$1(o, r.i)) {
       let c = "(" + h(e, r) + ",[" + a + "," + a + "])";
-      return G(e, t, b(e, r.i), i), Ze(e, t, a), c;
+      return W(e, t, b(e, r.i), i), Ze(e, t, a), c;
     }
     let u = o.stack;
-    return o.stack = [], G(e, t, h(e, r), i), o.stack = u, "";
+    return o.stack = [], W(e, t, h(e, r), i), o.stack = u, "";
   }
   return "[" + h(e, r) + "," + h(e, n) + "]";
 }
-function Po(e, t) {
+function _o(e, t) {
   let r = no, n = t.e.k, a = n.length, o = t.i, i = t.f, u = b(e, i.i), c = e.base;
   if (a > 0) {
     let l = t.e.v;
@@ -2372,29 +2372,29 @@ function Po(e, t) {
     for (let d = 1, w = p; d < a; d++) w = nt(e, o, n[d], l[d], u), p += (w && p && ",") + w;
     c.stack.pop(), p && (r += "([" + p + "])");
   }
-  return i.t === 26 && (E(c, i.i), r = "(" + h(e, i) + "," + r + ")"), r;
+  return i.t === 26 && (E$1(c, i.i), r = "(" + h(e, i) + "," + r + ")"), r;
 }
 function $o(e, t) {
-  return j(e, t.f) + '("' + t.s + '")';
-}
-function zo(e, t) {
-  return "new " + t.c + "(" + h(e, t.f) + "," + t.b + "," + t.l + ")";
-}
-function Co(e, t) {
-  return "new DataView(" + h(e, t.f) + "," + t.b + "," + t.l + ")";
-}
-function Oo(e, t) {
-  let r = t.i;
-  e.base.stack.push(r);
-  let n = Oe$1(e, t, 'new AggregateError([],"' + t.m + '")');
-  return e.base.stack.pop(), n;
+  return D$1(e, t.f) + '("' + t.s + '")';
 }
 function To(e, t) {
-  return Oe$1(e, t, "new " + Tt[t.s] + '("' + t.m + '")');
+  return "new " + t.c + "(" + h(e, t.f) + "," + t.b + "," + t.l + ")";
+}
+function Oo(e, t) {
+  return "new DataView(" + h(e, t.f) + "," + t.b + "," + t.l + ")";
+}
+function zo(e, t) {
+  let r = t.i;
+  e.base.stack.push(r);
+  let n = ze$1(e, t, 'new AggregateError([],"' + t.m + '")');
+  return e.base.stack.pop(), n;
+}
+function Co(e, t) {
+  return ze$1(e, t, "new " + Ct[t.s] + '("' + t.m + '")');
 }
 function Io(e, t) {
   let r, n = t.f, a = t.i, o = t.s ? so : ao, i = e.base;
-  if (x(i, n)) {
+  if (A$1(i, n)) {
     let u = b(e, n.i);
     r = o + (t.s ? "().then(" + sr([], u) + ")" : "().catch(" + Ka([], "throw " + u) + ")");
   } else {
@@ -2407,23 +2407,23 @@ function Io(e, t) {
 function Lo(e, t) {
   return "Object(" + h(e, t.f) + ")";
 }
-function j(e, t) {
+function D$1(e, t) {
   let r = h(e, t);
   return t.t === 4 ? r : "(" + r + ")";
 }
 function No(e, t) {
   if (e.mode === 1) throw new F(t);
-  return "(" + W(e, t.s, j(e, t.f) + "()") + ").p";
+  return "(" + G$1(e, t.s, D$1(e, t.f) + "()") + ").p";
 }
 function Fo(e, t) {
   if (e.mode === 1) throw new F(t);
-  return j(e, t.a[0]) + "(" + b(e, t.i) + "," + h(e, t.a[1]) + ")";
+  return D$1(e, t.a[0]) + "(" + b(e, t.i) + "," + h(e, t.a[1]) + ")";
 }
 function Uo(e, t) {
   if (e.mode === 1) throw new F(t);
-  return j(e, t.a[0]) + "(" + b(e, t.i) + "," + h(e, t.a[1]) + ")";
+  return D$1(e, t.a[0]) + "(" + b(e, t.i) + "," + h(e, t.a[1]) + ")";
 }
-function jo(e, t) {
+function Do(e, t) {
   let r = e.base.plugins;
   if (r) for (let n = 0, a = r.length; n < a; n++) {
     let o = r[n];
@@ -2431,24 +2431,24 @@ function jo(e, t) {
   }
   throw new Mt(t.c);
 }
-function Do(e, t) {
-  let r = "", n = false;
-  return t.f.t !== 4 && (E(e.base, t.f.i), r = "(" + h(e, t.f) + ",", n = true), r += W(e, t.i, "(" + Us + ")(" + b(e, t.f.i) + ")"), n && (r += ")"), r;
-}
 function Ho(e, t) {
-  return j(e, t.a[0]) + "(" + h(e, t.a[1]) + ")";
+  let r = "", n = false;
+  return t.f.t !== 4 && (E$1(e.base, t.f.i), r = "(" + h(e, t.f) + ",", n = true), r += G$1(e, t.i, "(" + Us + ")(" + b(e, t.f.i) + ")"), n && (r += ")"), r;
+}
+function jo(e, t) {
+  return D$1(e, t.a[0]) + "(" + h(e, t.a[1]) + ")";
 }
 function qo(e, t) {
   let r = t.a[0], n = t.a[1], a = e.base, o = "";
-  r.t !== 4 && (E(a, r.i), o += "(" + h(e, r)), n.t !== 4 && (E(a, n.i), o += (o ? "," : "(") + h(e, n)), o && (o += ",");
-  let i = W(e, t.i, "(" + js + ")(" + b(e, n.i) + "," + b(e, r.i) + ")");
+  r.t !== 4 && (E$1(a, r.i), o += "(" + h(e, r)), n.t !== 4 && (E$1(a, n.i), o += (o ? "," : "(") + h(e, n)), o && (o += ",");
+  let i = G$1(e, t.i, "(" + Ds + ")(" + b(e, n.i) + "," + b(e, r.i) + ")");
   return o ? o + i + ")" : i;
 }
 function Mo(e, t) {
-  return j(e, t.a[0]) + "(" + h(e, t.a[1]) + ")";
+  return D$1(e, t.a[0]) + "(" + h(e, t.a[1]) + ")";
 }
 function Bo(e, t) {
-  let r = W(e, t.i, j(e, t.f) + "()"), n = t.a.length;
+  let r = G$1(e, t.i, D$1(e, t.f) + "()"), n = t.a.length;
   if (n) {
     let a = h(e, t.a[0]);
     for (let o = 1; o < n; o++) a += "," + h(e, t.a[o]);
@@ -2459,22 +2459,22 @@ function Bo(e, t) {
 function Vo(e, t) {
   return b(e, t.i) + ".next(" + h(e, t.f) + ")";
 }
-function Wo(e, t) {
+function Go(e, t) {
   return b(e, t.i) + ".throw(" + h(e, t.f) + ")";
 }
-function Go(e, t) {
+function Wo(e, t) {
   return b(e, t.i) + ".return(" + h(e, t.f) + ")";
 }
-function st$1(e, t, r, n) {
+function st(e, t, r, n) {
   let a = e.base;
-  return x(a, n) ? (E(a, t), bo(e, t, r, b(e, n.i)), "") : h(e, n);
+  return A$1(a, n) ? (E$1(a, t), bo(e, t, r, b(e, n.i)), "") : h(e, n);
 }
 function Xo(e, t) {
   let r = t.a, n = r.length, a = t.i;
   if (n > 0) {
     e.base.stack.push(a);
-    let o = st$1(e, a, 0, r[0]);
-    for (let i = 1, u = o; i < n; i++) u = st$1(e, a, i, r[i]), o += (u && o && ",") + u;
+    let o = st(e, a, 0, r[0]);
+    for (let i = 1, u = o; i < n; i++) u = st(e, a, i, r[i]), o += (u && o && ",") + u;
     if (e.base.stack.pop(), o) return "{__SEROVAL_SEQUENCE__:!0,v:[" + o + "],t:" + t.s + ",d:" + t.l + "}";
   }
   return "{__SEROVAL_SEQUENCE__:!0,v:[],t:-1,d:0}";
@@ -2492,24 +2492,24 @@ function Jo(e, t) {
     case 11:
       return Ro(e, t);
     case 5:
-      return xo(t);
+      return Ao(t);
     case 6:
-      return Ao(e, t);
+      return xo(e, t);
     case 7:
-      return _o(e, t);
-    case 8:
       return Po(e, t);
+    case 8:
+      return _o(e, t);
     case 19:
       return $o(e, t);
     case 16:
     case 15:
-      return zo(e, t);
-    case 20:
-      return Co(e, t);
-    case 14:
-      return Oo(e, t);
-    case 13:
       return To(e, t);
+    case 20:
+      return Oo(e, t);
+    case 14:
+      return zo(e, t);
+    case 13:
+      return Co(e, t);
     case 12:
       return Io(e, t);
     case 21:
@@ -2517,7 +2517,7 @@ function Jo(e, t) {
     case 22:
       return No(e, t);
     case 25:
-      return jo(e, t);
+      return Do(e, t);
     case 26:
       return Xs[t.s];
     case 35:
@@ -2529,7 +2529,7 @@ function Jo(e, t) {
 function h(e, t) {
   switch (t.t) {
     case 2:
-      return Dn[t.s];
+      return Hn[t.s];
     case 0:
       return "" + t.s;
     case 1:
@@ -2543,9 +2543,9 @@ function h(e, t) {
     case 24:
       return Uo(e, t);
     case 27:
-      return Do(e, t);
-    case 28:
       return Ho(e, t);
+    case 28:
+      return jo(e, t);
     case 29:
       return qo(e, t);
     case 30:
@@ -2555,11 +2555,11 @@ function h(e, t) {
     case 32:
       return Vo(e, t);
     case 33:
-      return Wo(e, t);
-    case 34:
       return Go(e, t);
+    case 34:
+      return Wo(e, t);
     default:
-      return W(e, t.i, Jo(e, t));
+      return G$1(e, t.i, Jo(e, t));
   }
 }
 function Yo(e, t) {
@@ -2617,13 +2617,13 @@ function ei(e, t, r) {
 function ti(e, t, r, n) {
   return cs(r, n, ei(e, t, n));
 }
-function Te$1(e, t, r) {
+function Ce$1(e, t, r) {
   let n = Object.entries(r), a = [], o = [];
   for (let i = 0, u = n.length; i < u; i++) a.push(R$1(n[i][0])), o.push(v$1(e, t, n[i][1]));
-  return _$1 in r && (a.push(L(e.base, _$1)), o.push(ms(ta(e.base), v$1(e, t, qs(r))))), A$1 in r && (a.push(L(e.base, A$1)), o.push(ys(ra(e.base), v$1(e, t, e.type === 1 ? ee() : Ys(r))))), B in r && (a.push(L(e.base, B)), o.push(Dt(r[B]))), M$1 in r && (a.push(L(e.base, M$1)), o.push(r[M$1] ? It : Lt)), { k: a, v: o };
+  return P in r && (a.push(L(e.base, P)), o.push(ms(ta(e.base), v$1(e, t, qs(r))))), x in r && (a.push(L(e.base, x)), o.push(ys(ra(e.base), v$1(e, t, e.type === 1 ? ee() : Ys(r))))), B in r && (a.push(L(e.base, B)), o.push(Ht(r[B]))), M in r && (a.push(L(e.base, M)), o.push(r[M] ? It : Lt)), { k: a, v: o };
 }
 function ge$1(e, t, r, n, a) {
-  return na(r, n, a, Te$1(e, t, n));
+  return na(r, n, a, Ce$1(e, t, n));
 }
 function ri(e, t, r, n) {
   return ls(r, v$1(e, t, n.valueOf()));
@@ -2639,11 +2639,11 @@ function ai(e, t, r, n) {
 }
 function at(e, t, r, n) {
   let a = Ut(n, e.base.features);
-  return hs(r, n, a ? Te$1(e, t, a) : s);
+  return hs(r, n, a ? Ce$1(e, t, a) : s);
 }
 function oi(e, t, r, n) {
   let a = Ut(n, e.base.features);
-  return gs(r, n, a ? Te$1(e, t, a) : s);
+  return gs(r, n, a ? Ce$1(e, t, a) : s);
 }
 function ii(e, t, r, n) {
   let a = [], o = [];
@@ -2696,14 +2696,14 @@ function pi(e, t, r, n) {
 function di(e, t, r, n, a) {
   for (let o = 0, i = a.length; o < i; o++) {
     let u = a[o];
-    if (u.parse.sync && u.test(n)) return Ht(r, u.tag, u.parse.sync(n, new Ko(e, t), { id: r }));
+    if (u.parse.sync && u.test(n)) return jt(r, u.tag, u.parse.sync(n, new Ko(e, t), { id: r }));
   }
   return s;
 }
 function hi(e, t, r, n, a) {
   for (let o = 0, i = a.length; o < i; o++) {
     let u = a[o];
-    if (u.parse.stream && u.test(n)) return Ht(r, u.tag, u.parse.stream(n, new Qo(e, t), { id: r }));
+    if (u.parse.stream && u.test(n)) return jt(r, u.tag, u.parse.stream(n, new Qo(e, t), { id: r }));
   }
   return s;
 }
@@ -2766,18 +2766,18 @@ function bi(e, t, r, n, a) {
   }
   if (o & 1 && typeof AggregateError < "u" && (a === AggregateError || n instanceof AggregateError)) return oi(e, t, r, n);
   if (n instanceof Error) return at(e, t, r, n);
-  if (_$1 in n || A$1 in n) return ge$1(e, t, r, n, !!a);
+  if (P in n || x in n) return ge$1(e, t, r, n, !!a);
   throw new ce$1(n);
 }
 function mi(e, t, r, n) {
   if (Array.isArray(n)) return ti(e, t, r, n);
   if (Js(n)) return ci(e, t, r, n);
-  if (Hs(n)) return gi(e, t, r, n);
+  if (js(n)) return gi(e, t, r, n);
   let a = n.constructor;
-  return a === Cs ? v$1(e, t, n.replacement) : fr(e, t, r, n) || bi(e, t, r, n, a);
+  return a === Os ? v$1(e, t, n.replacement) : fr(e, t, r, n) || bi(e, t, r, n, a);
 }
 function yi(e, t, r) {
-  let n = Pe$1(e.base, r);
+  let n = _e$1(e.base, r);
   if (n.type !== 0) return n.value;
   let a = fr(e, t, n.value, r);
   if (a) return a;
@@ -2791,14 +2791,14 @@ function v$1(e, t, r) {
     case "undefined":
       return Mn;
     case "string":
-      return Dt(r);
+      return Ht(r);
     case "number":
       return rs(r);
     case "bigint":
       return ns(r);
     case "object": {
       if (r) {
-        let n = Pe$1(e.base, r);
+        let n = _e$1(e.base, r);
         return n.type === 0 ? mi(e, t + 1, n.value, r) : n.value;
       }
       return Bn;
@@ -2873,7 +2873,7 @@ function Ei(e, t = {}) {
   let n = $e$1(t.plugins), a = t.disabledFeatures || 0, o = (r = e.f) != null ? r : 63, i = ha({ plugins: n, markedRefs: e.m, features: o & ~a, disabledFeatures: a });
   return Xa(i, e.t);
 }
-var xe$1 = (e) => {
+var Ae$1 = (e) => {
   let t = new AbortController(), r = t.abort.bind(t);
   return e.then(r, r), t;
 };
@@ -2883,10 +2883,10 @@ function ki(e) {
 function Ri(e) {
   this.addEventListener("abort", ki.bind(this, e), { once: true });
 }
-function ot(e) {
+function ot$1(e) {
   return new Promise(Ri.bind(e));
 }
-var Y = {}, xi = { tag: "seroval-plugins/web/AbortControllerFactoryPlugin", test(e) {
+var Y = {}, Ai = { tag: "seroval-plugins/web/AbortControllerFactoryPlugin", test(e) {
   return e === Y;
 }, parse: { sync() {
   return Y;
@@ -2895,30 +2895,30 @@ var Y = {}, xi = { tag: "seroval-plugins/web/AbortControllerFactoryPlugin", test
 }, stream() {
   return Y;
 } }, serialize() {
-  return xe$1.toString();
+  return Ae$1.toString();
 }, deserialize() {
-  return xe$1;
-} }, Ai = { tag: "seroval-plugins/web/AbortSignal", extends: [xi], test(e) {
+  return Ae$1;
+} }, xi = { tag: "seroval-plugins/web/AbortSignal", extends: [Ai], test(e) {
   return typeof AbortSignal > "u" ? false : e instanceof AbortSignal;
 }, parse: { sync(e, t) {
   return e.aborted ? { reason: t.parse(e.reason) } : {};
 }, async async(e, t) {
   if (e.aborted) return { reason: await t.parse(e.reason) };
-  let r = await ot(e);
+  let r = await ot$1(e);
   return { reason: await t.parse(r) };
 }, stream(e, t) {
   if (e.aborted) return { reason: t.parse(e.reason) };
-  let r = ot(e);
+  let r = ot$1(e);
   return { factory: t.parse(Y), controller: t.parse(r) };
 } }, serialize(e, t) {
   return e.reason ? "AbortSignal.abort(" + t.serialize(e.reason) + ")" : e.controller && e.factory ? "(" + t.serialize(e.factory) + ")(" + t.serialize(e.controller) + ").signal" : "(new AbortController).signal";
 }, deserialize(e, t) {
-  return e.reason ? AbortSignal.abort(t.deserialize(e.reason)) : e.controller ? xe$1(t.deserialize(e.controller)).signal : new AbortController().signal;
-} }, _i = Ai;
+  return e.reason ? AbortSignal.abort(t.deserialize(e.reason)) : e.controller ? Ae$1(t.deserialize(e.controller)).signal : new AbortController().signal;
+} }, Pi = xi;
 function be$1(e) {
   return { detail: e.detail, bubbles: e.bubbles, cancelable: e.cancelable, composed: e.composed };
 }
-var Pi = { tag: "seroval-plugins/web/CustomEvent", test(e) {
+var _i = { tag: "seroval-plugins/web/CustomEvent", test(e) {
   return typeof CustomEvent > "u" ? false : e instanceof CustomEvent;
 }, parse: { sync(e, t) {
   return { type: t.parse(e.type), options: t.parse(be$1(e)) };
@@ -2930,7 +2930,7 @@ var Pi = { tag: "seroval-plugins/web/CustomEvent", test(e) {
   return "new CustomEvent(" + t.serialize(e.type) + "," + t.serialize(e.options) + ")";
 }, deserialize(e, t) {
   return new CustomEvent(t.deserialize(e.type), t.deserialize(e.options));
-} }, $i = Pi, zi = { tag: "seroval-plugins/web/DOMException", test(e) {
+} }, $i = _i, Ti = { tag: "seroval-plugins/web/DOMException", test(e) {
   return typeof DOMException > "u" ? false : e instanceof DOMException;
 }, parse: { sync(e, t) {
   return { name: t.parse(e.name), message: t.parse(e.message) };
@@ -2942,11 +2942,11 @@ var Pi = { tag: "seroval-plugins/web/CustomEvent", test(e) {
   return "new DOMException(" + t.serialize(e.message) + "," + t.serialize(e.name) + ")";
 }, deserialize(e, t) {
   return new DOMException(t.deserialize(e.message), t.deserialize(e.name));
-} }, Ci = zi;
+} }, Oi = Ti;
 function me$1(e) {
   return { bubbles: e.bubbles, cancelable: e.cancelable, composed: e.composed };
 }
-var Oi = { tag: "seroval-plugins/web/Event", test(e) {
+var zi = { tag: "seroval-plugins/web/Event", test(e) {
   return typeof Event > "u" ? false : e instanceof Event;
 }, parse: { sync(e, t) {
   return { type: t.parse(e.type), options: t.parse(me$1(e)) };
@@ -2958,7 +2958,7 @@ var Oi = { tag: "seroval-plugins/web/Event", test(e) {
   return "new Event(" + t.serialize(e.type) + "," + t.serialize(e.options) + ")";
 }, deserialize(e, t) {
   return new Event(t.deserialize(e.type), t.deserialize(e.options));
-} }, Ti = Oi, Ii = { tag: "seroval-plugins/web/File", test(e) {
+} }, Ci = zi, Ii = { tag: "seroval-plugins/web/File", test(e) {
   return typeof File > "u" ? false : e instanceof File;
 }, parse: { async async(e, t) {
   return { name: await t.parse(e.name), options: await t.parse({ type: e.type, lastModified: e.lastModified }), buffer: await t.parse(await e.arrayBuffer()) };
@@ -2973,29 +2973,29 @@ function ye$1(e) {
     t.push([n, r]);
   }), t;
 }
-var z = {}, hr = (e, t = new FormData(), r = 0, n = e.length, a) => {
+var O$1 = {}, hr = (e, t = new FormData(), r = 0, n = e.length, a) => {
   for (; r < n; r++) a = e[r], t.append(a[0], a[1]);
   return t;
 }, Ni = { tag: "seroval-plugins/web/FormDataFactory", test(e) {
-  return e === z;
+  return e === O$1;
 }, parse: { sync() {
-  return z;
+  return O$1;
 }, async async() {
-  return await Promise.resolve(z);
+  return await Promise.resolve(O$1);
 }, stream() {
-  return z;
+  return O$1;
 } }, serialize() {
   return hr.toString();
 }, deserialize() {
-  return z;
+  return O$1;
 } }, Fi = { tag: "seroval-plugins/web/FormData", extends: [Li, Ni], test(e) {
   return typeof FormData > "u" ? false : e instanceof FormData;
 }, parse: { sync(e, t) {
-  return { factory: t.parse(z), entries: t.parse(ye$1(e)) };
+  return { factory: t.parse(O$1), entries: t.parse(ye$1(e)) };
 }, async async(e, t) {
-  return { factory: await t.parse(z), entries: await t.parse(ye$1(e)) };
+  return { factory: await t.parse(O$1), entries: await t.parse(ye$1(e)) };
 }, stream(e, t) {
-  return { factory: t.parse(z), entries: t.parse(ye$1(e)) };
+  return { factory: t.parse(O$1), entries: t.parse(ye$1(e)) };
 } }, serialize(e, t) {
   return "(" + t.serialize(e.factory) + ")(" + t.serialize(e.entries) + ")";
 }, deserialize(e, t) {
@@ -3007,7 +3007,7 @@ function we$1(e) {
     t.push([n, r]);
   }), t;
 }
-var ji = { tag: "seroval-plugins/web/Headers", test(e) {
+var Di = { tag: "seroval-plugins/web/Headers", test(e) {
   return typeof Headers > "u" ? false : e instanceof Headers;
 }, parse: { sync(e, t) {
   return { value: t.parse(we$1(e)) };
@@ -3019,7 +3019,7 @@ var ji = { tag: "seroval-plugins/web/Headers", test(e) {
   return "new Headers(" + t.serialize(e.value) + ")";
 }, deserialize(e, t) {
   return new Headers(t.deserialize(e.value));
-} }, Ue$1 = ji, C$1 = {}, gr = (e) => new ReadableStream({ start: (t) => {
+} }, Ue$1 = Di, z = {}, gr = (e) => new ReadableStream({ start: (t) => {
   e.on({ next: (r) => {
     try {
       t.enqueue(r);
@@ -3033,18 +3033,18 @@ var ji = { tag: "seroval-plugins/web/Headers", test(e) {
     } catch {
     }
   } });
-} }), Di = { tag: "seroval-plugins/web/ReadableStreamFactory", test(e) {
-  return e === C$1;
+} }), Hi = { tag: "seroval-plugins/web/ReadableStreamFactory", test(e) {
+  return e === z;
 }, parse: { sync() {
-  return C$1;
+  return z;
 }, async async() {
-  return await Promise.resolve(C$1);
+  return await Promise.resolve(z);
 }, stream() {
-  return C$1;
+  return z;
 } }, serialize() {
   return gr.toString();
 }, deserialize() {
-  return C$1;
+  return z;
 } };
 function it(e) {
   let t = ee(), r = e.getReader();
@@ -3059,24 +3059,24 @@ function it(e) {
   return n().catch(() => {
   }), t;
 }
-var Hi = { tag: "seroval/plugins/web/ReadableStream", extends: [Di], test(e) {
+var ji = { tag: "seroval/plugins/web/ReadableStream", extends: [Hi], test(e) {
   return typeof ReadableStream > "u" ? false : e instanceof ReadableStream;
 }, parse: { sync(e, t) {
-  return { factory: t.parse(C$1), stream: t.parse(ee()) };
+  return { factory: t.parse(z), stream: t.parse(ee()) };
 }, async async(e, t) {
-  return { factory: await t.parse(C$1), stream: await t.parse(it(e)) };
+  return { factory: await t.parse(z), stream: await t.parse(it(e)) };
 }, stream(e, t) {
-  return { factory: t.parse(C$1), stream: t.parse(it(e)) };
+  return { factory: t.parse(z), stream: t.parse(it(e)) };
 } }, serialize(e, t) {
   return "(" + t.serialize(e.factory) + ")(" + t.serialize(e.stream) + ")";
 }, deserialize(e, t) {
   let r = t.deserialize(e.stream);
   return gr(r);
-} }, je$1 = Hi;
+} }, De$1 = ji;
 function ut(e, t) {
   return { body: t, cache: e.cache, credentials: e.credentials, headers: e.headers, integrity: e.integrity, keepalive: e.keepalive, method: e.method, mode: e.mode, redirect: e.redirect, referrer: e.referrer, referrerPolicy: e.referrerPolicy };
 }
-var qi = { tag: "seroval-plugins/web/Request", extends: [je$1, Ue$1], test(e) {
+var qi = { tag: "seroval-plugins/web/Request", extends: [De$1, Ue$1], test(e) {
   return typeof Request > "u" ? false : e instanceof Request;
 }, parse: { async async(e, t) {
   return { url: await t.parse(e.url), options: await t.parse(ut(e, e.body && !e.bodyUsed ? await e.clone().arrayBuffer() : null)) };
@@ -3090,7 +3090,7 @@ var qi = { tag: "seroval-plugins/web/Request", extends: [je$1, Ue$1], test(e) {
 function ct(e) {
   return { headers: e.headers, status: e.status, statusText: e.statusText };
 }
-var Bi = { tag: "seroval-plugins/web/Response", extends: [je$1, Ue$1], test(e) {
+var Bi = { tag: "seroval-plugins/web/Response", extends: [De$1, Ue$1], test(e) {
   return typeof Response > "u" ? false : e instanceof Response;
 }, parse: { async async(e, t) {
   return { body: await t.parse(e.body && !e.bodyUsed ? await e.clone().arrayBuffer() : null), options: await t.parse(ct(e)) };
@@ -3100,7 +3100,7 @@ var Bi = { tag: "seroval-plugins/web/Response", extends: [je$1, Ue$1], test(e) {
   return "new Response(" + t.serialize(e.body) + "," + t.serialize(e.options) + ")";
 }, deserialize(e, t) {
   return new Response(t.deserialize(e.body), t.deserialize(e.options));
-} }, Vi = Bi, Wi = { tag: "seroval-plugins/web/URL", test(e) {
+} }, Vi = Bi, Gi = { tag: "seroval-plugins/web/URL", test(e) {
   return typeof URL > "u" ? false : e instanceof URL;
 }, parse: { sync(e, t) {
   return { value: t.parse(e.href) };
@@ -3112,7 +3112,7 @@ var Bi = { tag: "seroval-plugins/web/Response", extends: [je$1, Ue$1], test(e) {
   return "new URL(" + t.serialize(e.value) + ")";
 }, deserialize(e, t) {
   return new URL(t.deserialize(e.value));
-} }, Gi = Wi, Xi = { tag: "seroval-plugins/web/URLSearchParams", test(e) {
+} }, Wi = Gi, Xi = { tag: "seroval-plugins/web/URLSearchParams", test(e) {
   return typeof URLSearchParams > "u" ? false : e instanceof URLSearchParams;
 }, parse: { sync(e, t) {
   return { value: t.parse(e.toString()) };
@@ -3125,14 +3125,14 @@ var Bi = { tag: "seroval-plugins/web/Response", extends: [je$1, Ue$1], test(e) {
 }, deserialize(e, t) {
   return new URLSearchParams(t.deserialize(e.value));
 } }, Ji = Xi;
-const De$1 = [_i, $i, Ci, Ti, Ui, Ue$1, je$1, Mi, Vi, Ji, Gi], Yi = 64, br = Et.RegExp;
+const He$1 = [Pi, $i, Oi, Ci, Ui, Ue$1, De$1, Mi, Vi, Ji, Wi], Yi = 64, br = Et.RegExp;
 function mr(e) {
   const t = new TextEncoder().encode(e), r = t.length, n = r.toString(16), a = "00000000".substring(0, 8 - n.length) + n, o = new TextEncoder().encode(`;0x${a};`), i = new Uint8Array(12 + r);
   return i.set(o), i.set(t, 12), i;
 }
 function lt(e, t) {
   return new ReadableStream({ start(r) {
-    vi(t, { scopeId: e, plugins: De$1, onSerialize(n, a) {
+    vi(t, { scopeId: e, plugins: He$1, onSerialize(n, a) {
       r.enqueue(mr(a ? `(${Kn(e)},${n})` : n));
     }, onDone() {
       r.close();
@@ -3143,7 +3143,7 @@ function lt(e, t) {
 }
 function Ki(e) {
   return new ReadableStream({ start(t) {
-    Si(e, { disabledFeatures: br, depthLimit: Yi, plugins: De$1, onParse(r) {
+    Si(e, { disabledFeatures: br, depthLimit: Yi, plugins: He$1, onParse(r) {
       t.enqueue(mr(JSON.stringify(r)));
     }, onDone() {
       t.close();
@@ -3153,7 +3153,7 @@ function Ki(e) {
   } });
 }
 async function ft(e) {
-  return Ei(JSON.parse(e), { plugins: De$1, disabledFeatures: br });
+  return Ei(JSON.parse(e), { plugins: He$1, disabledFeatures: br });
 }
 async function Qi(e) {
   const t = yn(e), r = t.request, n = r.headers.get("X-Server-Id"), a = r.headers.get("X-Server-Instance"), o = r.headers.has("X-Single-Flight"), i = new URL(r.url);
@@ -3181,18 +3181,18 @@ async function Qi(e) {
     let f = await provideRequestEvent(t, async () => (sharedConfig.context = { event: t }, t.locals.serverFunctionMeta = { id: u + "#" + c }, d(...w)));
     if (o && a && (f = await dt(t, f)), f instanceof Response) {
       if (f.headers && f.headers.has("X-Content-Raw")) return f;
-      a && (f.headers && We$1(e, f.headers), f.status && (f.status < 300 || f.status >= 400) && ie(e, f.status), f.customBody ? f = await f.customBody() : f.body == null && (f = null));
+      a && (f.headers && Ge$1(e, f.headers), f.status && (f.status < 300 || f.status >= 400) && ie(e, f.status), f.customBody ? f = await f.customBody() : f.body == null && (f = null));
     }
     if (!a) return pt(f, r, w);
-    return D$1(e, "x-serialized", "true"), D$1(e, "content-type", "text/javascript"), lt(a, f);
+    return H$1(e, "x-serialized", "true"), H$1(e, "content-type", "text/javascript"), lt(a, f);
     return Ki(f);
   } catch (f) {
-    if (f instanceof Response) o && a && (f = await dt(t, f)), f.headers && We$1(e, f.headers), f.status && (!a || f.status < 300 || f.status >= 400) && ie(e, f.status), f.customBody ? f = f.customBody() : f.body == null && (f = null), D$1(e, "X-Error", "true");
+    if (f instanceof Response) o && a && (f = await dt(t, f)), f.headers && Ge$1(e, f.headers), f.status && (!a || f.status < 300 || f.status >= 400) && ie(e, f.status), f.customBody ? f = f.customBody() : f.body == null && (f = null), H$1(e, "X-Error", "true");
     else if (a) {
       const k = f instanceof Error ? f.message : typeof f == "string" ? f : "true";
-      D$1(e, "X-Error", k.replace(/[\r\n]+/g, ""));
+      H$1(e, "X-Error", k.replace(/[\r\n]+/g, ""));
     } else f = pt(f, r, w, true);
-    return a ? (D$1(e, "x-serialized", "true"), D$1(e, "content-type", "text/javascript"), lt(a, f)) : f;
+    return a ? (H$1(e, "x-serialized", "true"), H$1(e, "content-type", "text/javascript"), lt(a, f)) : f;
   }
 }
 function pt(e, t, r, n) {
@@ -3208,7 +3208,7 @@ function Zi(e) {
   let a = false;
   return ((_a2 = e.nativeEvent.node) == null ? void 0 : _a2.req) && (a = true, e.nativeEvent.node.req.headers.cookie = ""), n.forEach((o) => {
     if (!o) return;
-    const { maxAge: i, expires: u, name: c, value: l } = Wr(o);
+    const { maxAge: i, expires: u, name: c, value: l } = Gr(o);
     if (i != null && i <= 0) {
       delete r[c];
       return;
@@ -3227,7 +3227,7 @@ async function dt(e, t) {
   t instanceof Response && (t.headers.has("X-Revalidate") && (r = t.headers.get("X-Revalidate").split(",")), t.headers.has("Location") && (n = new URL(t.headers.get("Location"), new URL(e.request.url).origin + "").toString()));
   const a = mn(e);
   return a.request = new Request(n, { headers: Zi(e) }), await provideRequestEvent(a, async () => {
-    await In(a), ve$1 || (ve$1 = (await import('../build/app-uwcYTPv8.mjs')).default), a.router.dataOnly = r || true, a.router.previousUrl = e.request.headers.get("referer");
+    await In(a), ve$1 || (ve$1 = (await import('../build/app-C-2q4V1l.mjs')).default), a.router.dataOnly = r || true, a.router.previousUrl = e.request.headers.get("referer");
     try {
       renderToString(() => {
         sharedConfig.context.event = a, ve$1();
@@ -3254,8 +3254,8 @@ const ce = isServer ? (e) => {
 var pe = ["<span", ' style="font-size:1.5em;text-align:center;position:fixed;left:0px;bottom:55%;width:100%;">500 | Internal Server Error</span>'];
 const le = (e) => {
   let t = false;
-  const r = catchError(() => e.children, (n) => {
-    console.error(n), t = !!n;
+  const r = catchError(() => e.children, (s) => {
+    console.error(s), t = !!s;
   });
   return t ? [ssr(pe, ssrHydrationKey()), createComponent$1(ce, { code: 500 })] : r;
 };
@@ -3264,36 +3264,36 @@ const ue = { style: (e) => ssrElement("style", e.attrs, () => e.children, true),
   return e.key;
 } }), () => ssr(de), true) : null, noscript: (e) => ssrElement("noscript", e.attrs, () => escape(e.children), true) };
 function he(e, t) {
-  let { tag: r, attrs: { key: n, ...o } = { key: void 0 }, children: a } = e;
-  return ue[r]({ attrs: { ...o, nonce: t }, key: n, children: a });
+  let { tag: r, attrs: { key: s, ...n } = { key: void 0 }, children: a } = e;
+  return ue[r]({ attrs: { ...n, nonce: t }, key: s, children: a });
 }
-var T$1 = ["<script", ">", "<\/script>"], v = ["<script", ' type="module"', "><\/script>"];
+var S = ["<script", ">", "<\/script>"], R = ["<script", ' type="module"', "><\/script>"];
 const fe = ssr("<!DOCTYPE html>");
 function me(e) {
   const t = getRequestEvent(), r = t.nonce;
   return createComponent$1(NoHydration, { get children() {
     return [fe, createComponent$1(le, { get children() {
       return createComponent$1(e.document, { get assets() {
-        return t.assets.map((n) => he(n));
+        return t.assets.map((s) => he(s));
       }, get scripts() {
-        return r ? [ssr(T$1, ssrHydrationKey() + ssrAttribute("nonce", escape(r, true), false), `window.manifest = ${JSON.stringify(t.manifest)}`), ssr(v, ssrHydrationKey(), ssrAttribute("src", escape(globalThis.MANIFEST.client.inputs[globalThis.MANIFEST.client.handler].output.path, true), false))] : [ssr(T$1, ssrHydrationKey(), `window.manifest = ${JSON.stringify(t.manifest)}`), ssr(v, ssrHydrationKey(), ssrAttribute("src", escape(globalThis.MANIFEST.client.inputs[globalThis.MANIFEST.client.handler].output.path, true), false))];
+        return r ? [ssr(S, ssrHydrationKey() + ssrAttribute("nonce", escape(r, true), false), `window.manifest = ${JSON.stringify(t.manifest)}`), ssr(R, ssrHydrationKey(), ssrAttribute("src", escape(globalThis.MANIFEST.client.inputs[globalThis.MANIFEST.client.handler].output.path, true), false))] : [ssr(S, ssrHydrationKey(), `window.manifest = ${JSON.stringify(t.manifest)}`), ssr(R, ssrHydrationKey(), ssrAttribute("src", escape(globalThis.MANIFEST.client.inputs[globalThis.MANIFEST.client.handler].output.path, true), false))];
       } });
     } })];
   } });
 }
 function ge(e = {}) {
   let t, r = false;
-  const n = (i) => {
+  const s = (i) => {
     if (t && t !== i) throw new Error("Context conflict");
   };
-  let o;
+  let n;
   if (e.asyncContext) {
     const i = e.AsyncLocalStorage || globalThis.AsyncLocalStorage;
-    i ? o = new i() : console.warn("[unctx] `AsyncLocalStorage` is not provided.");
+    i ? n = new i() : console.warn("[unctx] `AsyncLocalStorage` is not provided.");
   }
   const a = () => {
-    if (o) {
-      const i = o.getStore();
+    if (n) {
+      const i = n.getStore();
       if (i !== void 0) return i;
     }
     return t;
@@ -3302,25 +3302,25 @@ function ge(e = {}) {
     const i = a();
     if (i === void 0) throw new Error("Context is not available");
     return i;
-  }, tryUse: () => a(), set: (i, s) => {
-    s || n(i), t = i, r = true;
+  }, tryUse: () => a(), set: (i, o) => {
+    o || s(i), t = i, r = true;
   }, unset: () => {
     t = void 0, r = false;
-  }, call: (i, s) => {
-    n(i), t = i;
+  }, call: (i, o) => {
+    s(i), t = i;
     try {
-      return o ? o.run(i, s) : s();
+      return n ? n.run(i, o) : o();
     } finally {
       r || (t = void 0);
     }
-  }, async callAsync(i, s) {
+  }, async callAsync(i, o) {
     t = i;
     const p = () => {
       t = i;
     }, c = () => t === i ? p : void 0;
     A.add(c);
     try {
-      const d = o ? o.run(i, s) : s();
+      const d = n ? n.run(i, o) : o();
       return r || (t = void 0), await d;
     } finally {
       A.delete(c);
@@ -3329,100 +3329,100 @@ function ge(e = {}) {
 }
 function be(e = {}) {
   const t = {};
-  return { get(r, n = {}) {
-    return t[r] || (t[r] = ge({ ...e, ...n })), t[r];
+  return { get(r, s = {}) {
+    return t[r] || (t[r] = ge({ ...e, ...s })), t[r];
   } };
 }
-const k = typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : typeof global < "u" ? global : {}, P = "__unctx__", we = k[P] || (k[P] = be()), ye = (e, t = {}) => we.get(e, t), $ = "__unctx_async_handlers__", A = k[$] || (k[$] = /* @__PURE__ */ new Set());
+const k = typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : typeof global < "u" ? global : {}, $ = "__unctx__", we = k[$] || (k[$] = be()), ye = (e, t = {}) => we.get(e, t), v = "__unctx_async_handlers__", A = k[v] || (k[v] = /* @__PURE__ */ new Set());
 function ke(e) {
   let t;
-  const r = D(e), n = { duplex: "half", method: e.method, headers: e.headers };
-  return e.node.req.body instanceof ArrayBuffer ? new Request(r, { ...n, body: e.node.req.body }) : new Request(r, { ...n, get body() {
+  const r = D(e), s = { duplex: "half", method: e.method, headers: e.headers };
+  return e.node.req.body instanceof ArrayBuffer ? new Request(r, { ...s, body: e.node.req.body }) : new Request(r, { ...s, get body() {
     return t || (t = Ae(e), t);
   } });
 }
-function xe(e) {
+function Te(e) {
   var _a;
   return (_a = e.web) != null ? _a : e.web = { request: ke(e), url: D(e) }, e.web.request;
 }
-function Re() {
-  return _e();
+function Ee() {
+  return Oe();
 }
 const q = /* @__PURE__ */ Symbol("$HTTPEvent");
-function Ee(e) {
+function xe(e) {
   return typeof e == "object" && (e instanceof H3Event || (e == null ? void 0 : e[q]) instanceof H3Event || (e == null ? void 0 : e.__is_event__) === true);
 }
 function l(e) {
   return function(...t) {
     var _a;
     let r = t[0];
-    if (Ee(r)) t[0] = r instanceof H3Event || r.__is_event__ ? r : r[q];
+    if (xe(r)) t[0] = r instanceof H3Event || r.__is_event__ ? r : r[q];
     else {
       if (!((_a = globalThis.app.config.server.experimental) == null ? void 0 : _a.asyncContext)) throw new Error("AsyncLocalStorage was not enabled. Use the `server.experimental.asyncContext: true` option in your app configuration to enable it. Or, pass the instance of HTTPEvent that you have as the first argument to the function.");
-      if (r = Re(), !r) throw new Error("No HTTPEvent found in AsyncLocalStorage. Make sure you are using the function within the server runtime.");
+      if (r = Ee(), !r) throw new Error("No HTTPEvent found in AsyncLocalStorage. Make sure you are using the function within the server runtime.");
       t.unshift(r);
     }
     return e(...t);
   };
 }
-const D = l(getRequestURL), Se = l(getRequestIP), C = l(setResponseStatus), H = l(getResponseStatus), Te = l(getResponseStatusText), y = l(getResponseHeaders), N = l(getResponseHeader), ve = l(setResponseHeader), Pe = l(appendResponseHeader), $e = l(sendRedirect), Ae = l(getRequestWebStream), Ce = l(removeResponseHeader), He = l(xe);
+const D = l(getRequestURL), Pe = l(getRequestIP), C = l(setResponseStatus), H = l(getResponseStatus), Se = l(getResponseStatusText), y = l(getResponseHeaders), N = l(getResponseHeader), Re = l(setResponseHeader), $e = l(appendResponseHeader), ve = l(sendRedirect), Ae = l(getRequestWebStream), Ce = l(removeResponseHeader), He = l(Te);
 function Ne() {
   var _a;
   return ye("nitro-app", { asyncContext: !!((_a = globalThis.app.config.server.experimental) == null ? void 0 : _a.asyncContext), AsyncLocalStorage: AsyncLocalStorage });
 }
-function _e() {
+function Oe() {
   return Ne().use().event;
 }
 const g = { NORMAL: 0, WILDCARD: 1, PLACEHOLDER: 2 };
-function Le(e = {}) {
-  const t = { options: e, rootNode: I(), staticRoutesMap: {} }, r = (n) => e.strictTrailingSlash ? n : n.replace(/\/$/, "") || "/";
-  if (e.routes) for (const n in e.routes) _(t, r(n), e.routes[n]);
-  return { ctx: t, lookup: (n) => Oe(t, r(n)), insert: (n, o) => _(t, r(n), o), remove: (n) => qe(t, r(n)) };
+function _e(e = {}) {
+  const t = { options: e, rootNode: I(), staticRoutesMap: {} }, r = (s) => e.strictTrailingSlash ? s : s.replace(/\/$/, "") || "/";
+  if (e.routes) for (const s in e.routes) O(t, r(s), e.routes[s]);
+  return { ctx: t, lookup: (s) => Le(t, r(s)), insert: (s, n) => O(t, r(s), n), remove: (s) => qe(t, r(s)) };
 }
-function Oe(e, t) {
+function Le(e, t) {
   const r = e.staticRoutesMap[t];
   if (r) return r.data;
-  const n = t.split("/"), o = {};
-  let a = false, i = null, s = e.rootNode, p = null;
-  for (let c = 0; c < n.length; c++) {
-    const d = n[c];
-    s.wildcardChildNode !== null && (i = s.wildcardChildNode, p = n.slice(c).join("/"));
-    const b = s.children.get(d);
+  const s = t.split("/"), n = {};
+  let a = false, i = null, o = e.rootNode, p = null;
+  for (let c = 0; c < s.length; c++) {
+    const d = s[c];
+    o.wildcardChildNode !== null && (i = o.wildcardChildNode, p = s.slice(c).join("/"));
+    const b = o.children.get(d);
     if (b === void 0) {
-      if (s && s.placeholderChildren.length > 1) {
-        const W = n.length - c;
-        s = s.placeholderChildren.find((j) => j.maxDepth === W) || null;
-      } else s = s.placeholderChildren[0] || null;
-      if (!s) break;
-      s.paramName && (o[s.paramName] = d), a = true;
-    } else s = b;
+      if (o && o.placeholderChildren.length > 1) {
+        const M = s.length - c;
+        o = o.placeholderChildren.find((W) => W.maxDepth === M) || null;
+      } else o = o.placeholderChildren[0] || null;
+      if (!o) break;
+      o.paramName && (n[o.paramName] = d), a = true;
+    } else o = b;
   }
-  return (s === null || s.data === null) && i !== null && (s = i, o[s.paramName || "_"] = p, a = true), s ? a ? { ...s.data, params: a ? o : void 0 } : s.data : null;
+  return (o === null || o.data === null) && i !== null && (o = i, n[o.paramName || "_"] = p, a = true), o ? a ? { ...o.data, params: a ? n : void 0 } : o.data : null;
 }
-function _(e, t, r) {
-  let n = true;
-  const o = t.split("/");
+function O(e, t, r) {
+  let s = true;
+  const n = t.split("/");
   let a = e.rootNode, i = 0;
-  const s = [a];
-  for (const p of o) {
+  const o = [a];
+  for (const p of n) {
     let c;
     if (c = a.children.get(p)) a = c;
     else {
       const d = De(p);
-      c = I({ type: d, parent: a }), a.children.set(p, c), d === g.PLACEHOLDER ? (c.paramName = p === "*" ? `_${i++}` : p.slice(1), a.placeholderChildren.push(c), n = false) : d === g.WILDCARD && (a.wildcardChildNode = c, c.paramName = p.slice(3) || "_", n = false), s.push(c), a = c;
+      c = I({ type: d, parent: a }), a.children.set(p, c), d === g.PLACEHOLDER ? (c.paramName = p === "*" ? `_${i++}` : p.slice(1), a.placeholderChildren.push(c), s = false) : d === g.WILDCARD && (a.wildcardChildNode = c, c.paramName = p.slice(3) || "_", s = false), o.push(c), a = c;
     }
   }
-  for (const [p, c] of s.entries()) c.maxDepth = Math.max(s.length - p, c.maxDepth || 0);
-  return a.data = r, n === true && (e.staticRoutesMap[t] = a), a;
+  for (const [p, c] of o.entries()) c.maxDepth = Math.max(o.length - p, c.maxDepth || 0);
+  return a.data = r, s === true && (e.staticRoutesMap[t] = a), a;
 }
 function qe(e, t) {
   let r = false;
-  const n = t.split("/");
-  let o = e.rootNode;
-  for (const a of n) if (o = o.children.get(a), !o) return r;
-  if (o.data) {
-    const a = n.at(-1) || "";
-    o.data = null, Object.keys(o.children).length === 0 && o.parent && (o.parent.children.delete(a), o.parent.wildcardChildNode = null, o.parent.placeholderChildren = []), r = true;
+  const s = t.split("/");
+  let n = e.rootNode;
+  for (const a of s) if (n = n.children.get(a), !n) return r;
+  if (n.data) {
+    const a = s.at(-1) || "";
+    n.data = null, Object.keys(n.children).length === 0 && n.parent && (n.parent.children.delete(a), n.parent.wildcardChildNode = null, n.parent.placeholderChildren = []), r = true;
   }
   return r;
 }
@@ -3432,43 +3432,43 @@ function I(e = {}) {
 function De(e) {
   return e.startsWith("**") ? g.WILDCARD : e[0] === ":" || e === "*" ? g.PLACEHOLDER : g.NORMAL;
 }
-const M = [{ page: false, $GET: { src: "src/routes/api/integrations/printful/connect.ts?pick=GET", build: () => import('../build/connect5.mjs'), import: () => import('../build/connect5.mjs') }, $HEAD: { src: "src/routes/api/integrations/printful/connect.ts?pick=GET", build: () => import('../build/connect5.mjs'), import: () => import('../build/connect5.mjs') }, $POST: { src: "src/routes/api/integrations/printful/connect.ts?pick=POST", build: () => import('../build/connect22.mjs'), import: () => import('../build/connect22.mjs') }, path: "/api/integrations/printful/connect", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/integrations/printful/connect.ts" }, { page: false, $GET: { src: "src/routes/api/integrations/printify/connect.ts?pick=GET", build: () => import('../build/connect32.mjs'), import: () => import('../build/connect32.mjs') }, $HEAD: { src: "src/routes/api/integrations/printify/connect.ts?pick=GET", build: () => import('../build/connect32.mjs'), import: () => import('../build/connect32.mjs') }, $POST: { src: "src/routes/api/integrations/printify/connect.ts?pick=POST", build: () => import('../build/connect42.mjs'), import: () => import('../build/connect42.mjs') }, path: "/api/integrations/printify/connect", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/integrations/printify/connect.ts" }, { page: false, $POST: { src: "src/routes/api/payments/subscribe.ts?pick=POST", build: () => import('../build/subscribe2.mjs'), import: () => import('../build/subscribe2.mjs') }, path: "/api/payments/subscribe", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/payments/subscribe.ts" }, { page: false, $POST: { src: "src/routes/api/payments/webhook.ts?pick=POST", build: () => import('../build/webhook2.mjs'), import: () => import('../build/webhook2.mjs') }, path: "/api/payments/webhook", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/payments/webhook.ts" }, { page: true, path: "/dashboard/analytics", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/analytics.tsx" }, { page: true, path: "/dashboard/brands/:id", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/brands/[id].tsx" }, { page: true, path: "/dashboard/brands/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/brands/index.tsx" }, { page: true, path: "/dashboard/brands/new", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/brands/new.tsx" }, { page: true, path: "/dashboard/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/index.tsx" }, { page: true, path: "/dashboard/integrations/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/integrations/index.tsx" }, { page: true, path: "/dashboard/mockups/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/mockups/index.tsx" }, { page: true, path: "/dashboard/products/:id", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/products/[id].tsx" }, { page: true, path: "/dashboard/products/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/products/index.tsx" }, { page: true, path: "/dashboard/settings/billing", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/settings/billing.tsx" }, { page: true, path: "/dashboard/settings/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/settings/index.tsx" }, { page: true, path: "/dashboard/templates/:id", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/templates/[id].tsx" }, { page: true, path: "/dashboard/templates/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/templates/index.tsx" }, { page: true, path: "/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/index.tsx" }, { page: true, path: "/login", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/login.tsx" }, { page: true, path: "/pricing", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/pricing.tsx" }, { page: true, path: "/register", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/register.tsx" }];
-Ie(M.filter((e) => e.page));
+const G = [{ page: false, $DELETE: { src: "src/routes/api/[...path].ts?pick=DELETE", build: () => import('../build/_...path_5.mjs'), import: () => import('../build/_...path_5.mjs') }, $GET: { src: "src/routes/api/[...path].ts?pick=GET", build: () => import('../build/_...path_22.mjs'), import: () => import('../build/_...path_22.mjs') }, $HEAD: { src: "src/routes/api/[...path].ts?pick=GET", build: () => import('../build/_...path_22.mjs'), import: () => import('../build/_...path_22.mjs') }, $PATCH: { src: "src/routes/api/[...path].ts?pick=PATCH", build: () => import('../build/_...path_32.mjs'), import: () => import('../build/_...path_32.mjs') }, $POST: { src: "src/routes/api/[...path].ts?pick=POST", build: () => import('../build/_...path_42.mjs'), import: () => import('../build/_...path_42.mjs') }, path: "/api/*path", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/[...path].ts" }, { page: false, $POST: { src: "src/routes/api/auth/login.ts?pick=POST", build: () => import('../build/login2.mjs'), import: () => import('../build/login2.mjs') }, path: "/api/auth/login", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/auth/login.ts" }, { page: false, $POST: { src: "src/routes/api/auth/logout.ts?pick=POST", build: () => import('../build/logout2.mjs'), import: () => import('../build/logout2.mjs') }, path: "/api/auth/logout", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/auth/logout.ts" }, { page: false, $POST: { src: "src/routes/api/auth/register.ts?pick=POST", build: () => import('../build/register2.mjs'), import: () => import('../build/register2.mjs') }, path: "/api/auth/register", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/auth/register.ts" }, { page: false, $GET: { src: "src/routes/api/auth/session.ts?pick=GET", build: () => import('../build/session2.mjs'), import: () => import('../build/session2.mjs') }, $HEAD: { src: "src/routes/api/auth/session.ts?pick=GET", build: () => import('../build/session2.mjs'), import: () => import('../build/session2.mjs') }, path: "/api/auth/session", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/auth/session.ts" }, { page: false, $GET: { src: "src/routes/api/integrations/printful/connect.ts?pick=GET", build: () => import('../build/connect5.mjs'), import: () => import('../build/connect5.mjs') }, $HEAD: { src: "src/routes/api/integrations/printful/connect.ts?pick=GET", build: () => import('../build/connect5.mjs'), import: () => import('../build/connect5.mjs') }, $POST: { src: "src/routes/api/integrations/printful/connect.ts?pick=POST", build: () => import('../build/connect22.mjs'), import: () => import('../build/connect22.mjs') }, path: "/api/integrations/printful/connect", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/integrations/printful/connect.ts" }, { page: false, $GET: { src: "src/routes/api/integrations/printify/connect.ts?pick=GET", build: () => import('../build/connect32.mjs'), import: () => import('../build/connect32.mjs') }, $HEAD: { src: "src/routes/api/integrations/printify/connect.ts?pick=GET", build: () => import('../build/connect32.mjs'), import: () => import('../build/connect32.mjs') }, $POST: { src: "src/routes/api/integrations/printify/connect.ts?pick=POST", build: () => import('../build/connect42.mjs'), import: () => import('../build/connect42.mjs') }, path: "/api/integrations/printify/connect", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/integrations/printify/connect.ts" }, { page: false, $POST: { src: "src/routes/api/payments/subscribe.ts?pick=POST", build: () => import('../build/subscribe2.mjs'), import: () => import('../build/subscribe2.mjs') }, path: "/api/payments/subscribe", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/payments/subscribe.ts" }, { page: false, $POST: { src: "src/routes/api/payments/webhook.ts?pick=POST", build: () => import('../build/webhook2.mjs'), import: () => import('../build/webhook2.mjs') }, path: "/api/payments/webhook", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/api/payments/webhook.ts" }, { page: true, path: "/dashboard/analytics", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/analytics.tsx" }, { page: true, path: "/dashboard/brands/:id", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/brands/[id].tsx" }, { page: true, path: "/dashboard/brands/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/brands/index.tsx" }, { page: true, path: "/dashboard/brands/new", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/brands/new.tsx" }, { page: true, path: "/dashboard/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/index.tsx" }, { page: true, path: "/dashboard/integrations/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/integrations/index.tsx" }, { page: true, path: "/dashboard/mockups/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/mockups/index.tsx" }, { page: true, path: "/dashboard/products/:id", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/products/[id].tsx" }, { page: true, path: "/dashboard/products/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/products/index.tsx" }, { page: true, path: "/dashboard/settings/billing", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/settings/billing.tsx" }, { page: true, path: "/dashboard/settings/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/settings/index.tsx" }, { page: true, path: "/dashboard/templates/:id", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/templates/[id].tsx" }, { page: true, path: "/dashboard/templates/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/dashboard/templates/index.tsx" }, { page: true, path: "/", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/index.tsx" }, { page: true, path: "/login", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/login.tsx" }, { page: true, path: "/pricing", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/pricing.tsx" }, { page: true, path: "/register", filePath: "/home/node/.openclaw/workspace/cockbrothers/apps/frontend/src/routes/register.tsx" }];
+Ie(G.filter((e) => e.page));
 function Ie(e) {
-  function t(r, n, o, a) {
-    const i = Object.values(r).find((s) => o.startsWith(s.id + "/"));
-    return i ? (t(i.children || (i.children = []), n, o.slice(i.id.length)), r) : (r.push({ ...n, id: o, path: o.replace(/\([^)/]+\)/g, "").replace(/\/+/g, "/") }), r);
+  function t(r, s, n, a) {
+    const i = Object.values(r).find((o) => n.startsWith(o.id + "/"));
+    return i ? (t(i.children || (i.children = []), s, n.slice(i.id.length)), r) : (r.push({ ...s, id: n, path: n.replace(/\([^)/]+\)/g, "").replace(/\/+/g, "/") }), r);
   }
-  return e.sort((r, n) => r.path.length - n.path.length).reduce((r, n) => t(r, n, n.path, n.path), []);
+  return e.sort((r, s) => r.path.length - s.path.length).reduce((r, s) => t(r, s, s.path, s.path), []);
 }
-function Me(e, t) {
-  const r = je.lookup(e);
+function Ge(e, t) {
+  const r = We.lookup(e);
   if (r && r.route) {
-    const n = r.route, o = t === "HEAD" ? n.$HEAD || n.$GET : n[`$${t}`];
-    if (o === void 0) return;
-    const a = n.page === true && n.$component !== void 0;
-    return { handler: o, params: r.params, isPage: a };
+    const s = r.route, n = t === "HEAD" ? s.$HEAD || s.$GET : s[`$${t}`];
+    if (n === void 0) return;
+    const a = s.page === true && s.$component !== void 0;
+    return { handler: n, params: r.params, isPage: a };
   }
 }
-function We(e) {
+function Me(e) {
   return e.$HEAD || e.$GET || e.$POST || e.$PUT || e.$PATCH || e.$DELETE;
 }
-const je = Le({ routes: M.reduce((e, t) => {
-  if (!We(t)) return e;
-  let r = t.path.replace(/\([^)/]+\)/g, "").replace(/\/+/g, "/").replace(/\*([^/]*)/g, (n, o) => `**:${o}`).split("/").map((n) => n.startsWith(":") || n.startsWith("*") ? n : encodeURIComponent(n)).join("/");
+const We = _e({ routes: G.reduce((e, t) => {
+  if (!Me(t)) return e;
+  let r = t.path.replace(/\([^)/]+\)/g, "").replace(/\/+/g, "/").replace(/\*([^/]*)/g, (s, n) => `**:${n}`).split("/").map((s) => s.startsWith(":") || s.startsWith("*") ? s : encodeURIComponent(s)).join("/");
   if (/:[^/]*\?/g.test(r)) throw new Error(`Optional parameters are not supported in API routes: ${r}`);
   if (e[r]) throw new Error(`Duplicate API routes for "${r}" found at "${e[r].route.path}" and "${t.path}"`);
   return e[r] = { route: t }, e;
-}, {}) }), R = "solidFetchEvent";
-function Ge(e) {
-  return { request: He(e), response: Be(e), clientAddress: Se(e), locals: {}, nativeEvent: e };
+}, {}) }), E = "solidFetchEvent";
+function je(e) {
+  return { request: He(e), response: Be(e), clientAddress: Pe(e), locals: {}, nativeEvent: e };
 }
 function Fe(e) {
-  if (!e.context[R]) {
-    const t = Ge(e);
-    e.context[R] = t;
+  if (!e.context[E]) {
+    const t = je(e);
+    e.context[E] = t;
   }
-  return e.context[R];
+  return e.context[E];
 }
 class Ue {
   constructor(t) {
@@ -3483,20 +3483,20 @@ class Ue {
     return this.get(t) !== null;
   }
   set(t, r) {
-    return ve(this.event, t, r);
+    return Re(this.event, t, r);
   }
   delete(t) {
     return Ce(this.event, t);
   }
   append(t, r) {
-    Pe(this.event, t, r);
+    $e(this.event, t, r);
   }
   getSetCookie() {
     const t = N(this.event, "Set-Cookie");
     return Array.isArray(t) ? t : [t];
   }
   forEach(t) {
-    return Object.entries(y(this.event)).forEach(([r, n]) => t(Array.isArray(n) ? n.join(", ") : n, r, this));
+    return Object.entries(y(this.event)).forEach(([r, s]) => t(Array.isArray(s) ? s.join(", ") : s, r, this));
   }
   entries() {
     return Object.entries(y(this.event)).map(([t, r]) => [t, Array.isArray(r) ? r.join(", ") : r])[Symbol.iterator]();
@@ -3517,7 +3517,7 @@ function Be(e) {
   }, set status(t) {
     C(e, t);
   }, get statusText() {
-    return Te(e);
+    return Se(e);
   }, set statusText(t) {
     C(e, H(e), t);
   }, headers: new Ue(e) };
@@ -3526,11 +3526,11 @@ const Ke = /* @__PURE__ */ new Set([301, 302, 303, 307, 308]);
 function ze(e) {
   return e.status && Ke.has(e.status) ? e.status : 302;
 }
-function Je(e, t, r = {}, n) {
-  return eventHandler({ handler: (o) => {
-    const a = Fe(o);
+function Je(e, t, r = {}, s) {
+  return eventHandler({ handler: (n) => {
+    const a = Fe(n);
     return provideRequestEvent(a, async () => {
-      const i = Me(new URL(a.request.url).pathname, a.request.method);
+      const i = Ge(new URL(a.request.url).pathname, a.request.method);
       if (i) {
         const c = await i.handler.import(), d = a.request.method === "HEAD" ? c.HEAD || c.GET : c[a.request.method];
         a.params = i.params || {}, sharedConfig.context = { event: a };
@@ -3539,13 +3539,13 @@ function Je(e, t, r = {}, n) {
         if (a.request.method !== "GET") throw new Error(`API handler for ${a.request.method} "${a.request.url}" did not return a response.`);
         if (!i.isPage) return;
       }
-      const s = await t(a), p = typeof r == "function" ? await r(s) : { ...r };
-      p.mode, p.nonce && (s.nonce = p.nonce);
+      const o = await t(a), p = typeof r == "function" ? await r(o) : { ...r };
+      p.mode, p.nonce && (o.nonce = p.nonce);
       {
-        const c = renderToString(() => (sharedConfig.context.event = s, e(s)), p);
-        if (s.complete = true, s.response && s.response.headers.get("Location")) {
-          const d = ze(s.response);
-          return $e(o, s.response.headers.get("Location"), d);
+        const c = renderToString(() => (sharedConfig.context.event = o, e(o)), p);
+        if (o.complete = true, o.response && o.response.headers.get("Location")) {
+          const d = ze(o.response);
+          return ve(n, o.response.headers.get("Location"), d);
         }
         return c;
       }
@@ -3560,14 +3560,14 @@ async function Qe(e) {
   return Object.assign(e, { manifest: await t.json(), assets: [...await t.inputs[t.handler].assets()], routes: [], complete: false, $islands: /* @__PURE__ */ new Set() });
 }
 var Ve = ['<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Cockbrothers - AI-powered brand kit generator &amp; mockup studio for print-on-demand"><meta name="theme-color" content="#6366f1"><meta property="og:title" content="Cockbrothers - Brand Kit Generator"><meta property="og:description" content="AI-powered brand kit generator &amp; mockup studio for print-on-demand entrepreneurs."><meta property="og:type" content="website"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Cockbrothers - Brand Kit Generator & Mockup Studio</title>', "</head>"], Xe = ["<html", ' lang="en" class="h-full">', '<body class="h-full"><div id="app">', "</div><!--$-->", "<!--/--></body></html>"];
-const st = Ye(() => createComponent$1(me, { document: ({ assets: e, children: t, scripts: r }) => ssr(Xe, ssrHydrationKey(), createComponent$1(NoHydration, { get children() {
+const ot = Ye(() => createComponent$1(me, { document: ({ assets: e, children: t, scripts: r }) => ssr(Xe, ssrHydrationKey(), createComponent$1(NoHydration, { get children() {
   return ssr(Ve, escape(e));
 } }), escape(t), escape(r)) }));
 
 const handlers = [
   { route: '', handler: _k20FAH, lazy: false, middleware: true, method: undefined },
   { route: '/_server', handler: fu, lazy: false, middleware: true, method: undefined },
-  { route: '/', handler: st, lazy: false, middleware: true, method: undefined }
+  { route: '/', handler: ot, lazy: false, middleware: true, method: undefined }
 ];
 
 function createNitroApp() {

@@ -1,8 +1,32 @@
 {
-  "_server-fns-BV-kv3QF.js": {
-    "file": "assets/server-fns-BV-kv3QF.js",
+  "_data-BYoURc4V.js": {
+    "file": "assets/data-BYoURc4V.js",
+    "name": "data"
+  },
+  "_server-fns-DS4A3qc8.js": {
+    "file": "assets/server-fns-DS4A3qc8.js",
     "name": "server-fns",
     "dynamicImports": [
+      "src/routes/api/[...path].ts?pick=DELETE",
+      "src/routes/api/[...path].ts?pick=DELETE",
+      "src/routes/api/[...path].ts?pick=GET",
+      "src/routes/api/[...path].ts?pick=GET",
+      "src/routes/api/[...path].ts?pick=GET",
+      "src/routes/api/[...path].ts?pick=GET",
+      "src/routes/api/[...path].ts?pick=PATCH",
+      "src/routes/api/[...path].ts?pick=PATCH",
+      "src/routes/api/[...path].ts?pick=POST",
+      "src/routes/api/[...path].ts?pick=POST",
+      "src/routes/api/auth/login.ts?pick=POST",
+      "src/routes/api/auth/login.ts?pick=POST",
+      "src/routes/api/auth/logout.ts?pick=POST",
+      "src/routes/api/auth/logout.ts?pick=POST",
+      "src/routes/api/auth/register.ts?pick=POST",
+      "src/routes/api/auth/register.ts?pick=POST",
+      "src/routes/api/auth/session.ts?pick=GET",
+      "src/routes/api/auth/session.ts?pick=GET",
+      "src/routes/api/auth/session.ts?pick=GET",
+      "src/routes/api/auth/session.ts?pick=GET",
       "src/routes/api/integrations/printful/connect.ts?pick=GET",
       "src/routes/api/integrations/printful/connect.ts?pick=GET",
       "src/routes/api/integrations/printful/connect.ts?pick=GET",
@@ -23,15 +47,83 @@
     ]
   },
   "src/app.tsx": {
-    "file": "assets/app-uwcYTPv8.js",
+    "file": "assets/app-C-2q4V1l.js",
     "name": "app",
     "src": "src/app.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_server-fns-BV-kv3QF.js"
+      "_server-fns-DS4A3qc8.js"
     ],
     "css": [
-      "assets/app-CAP0w3o3.css"
+      "assets/app-DtP-Rv0G.css"
+    ]
+  },
+  "src/routes/api/[...path].ts?pick=DELETE": {
+    "file": "_...path_.js",
+    "name": "_...path_",
+    "src": "src/routes/api/[...path].ts?pick=DELETE",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "src/routes/api/[...path].ts?pick=GET": {
+    "file": "_...path_2.js",
+    "name": "_...path_",
+    "src": "src/routes/api/[...path].ts?pick=GET",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "src/routes/api/[...path].ts?pick=PATCH": {
+    "file": "_...path_3.js",
+    "name": "_...path_",
+    "src": "src/routes/api/[...path].ts?pick=PATCH",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "src/routes/api/[...path].ts?pick=POST": {
+    "file": "_...path_4.js",
+    "name": "_...path_",
+    "src": "src/routes/api/[...path].ts?pick=POST",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "src/routes/api/auth/login.ts?pick=POST": {
+    "file": "login.js",
+    "name": "login",
+    "src": "src/routes/api/auth/login.ts?pick=POST",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_data-BYoURc4V.js"
+    ]
+  },
+  "src/routes/api/auth/logout.ts?pick=POST": {
+    "file": "logout.js",
+    "name": "logout",
+    "src": "src/routes/api/auth/logout.ts?pick=POST",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_data-BYoURc4V.js"
+    ]
+  },
+  "src/routes/api/auth/register.ts?pick=POST": {
+    "file": "register.js",
+    "name": "register",
+    "src": "src/routes/api/auth/register.ts?pick=POST",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_data-BYoURc4V.js"
+    ]
+  },
+  "src/routes/api/auth/session.ts?pick=GET": {
+    "file": "session.js",
+    "name": "session",
+    "src": "src/routes/api/auth/session.ts?pick=GET",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_data-BYoURc4V.js"
     ]
   },
   "src/routes/api/integrations/printful/connect.ts?pick=GET": {
@@ -82,7 +174,7 @@
     "src": "virtual:$vinxi/handler/server-fns",
     "isEntry": true,
     "imports": [
-      "_server-fns-BV-kv3QF.js"
+      "_server-fns-DS4A3qc8.js"
     ]
   }
 }
