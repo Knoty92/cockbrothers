@@ -420,7 +420,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-4uR9Jg9n.js",
+    "file": "assets/client-BuovnGFb.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
@@ -450,7 +450,7 @@
       "src/routes/register.tsx?pick=default&pick=$css"
     ],
     "css": [
-      "assets/client-Bd3Yeva5.css"
+      "assets/client-DtP-Rv0G.css"
     ]
   }
 }
