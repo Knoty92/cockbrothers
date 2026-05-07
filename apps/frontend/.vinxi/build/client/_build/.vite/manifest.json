@@ -65,8 +65,8 @@
       "_web-mN2KxWEl.js"
     ]
   },
-  "_client-D8T4IjhQ.js": {
-    "file": "assets/client-D8T4IjhQ.js",
+  "_client-BEX14on9.js": {
+    "file": "assets/client-BEX14on9.js",
     "name": "client"
   },
   "_components-D43TbKj7.js": {
@@ -77,13 +77,13 @@
       "_routing-B87cVCyJ.js"
     ]
   },
-  "_mockupStore-B00iTYtE.js": {
-    "file": "assets/mockupStore-B00iTYtE.js",
+  "_mockupStore-DXdbV29y.js": {
+    "file": "assets/mockupStore-DXdbV29y.js",
     "name": "mockupStore",
     "isDynamicEntry": true,
     "imports": [
       "_store-BNroEFDV.js",
-      "_client-D8T4IjhQ.js"
+      "_client-BEX14on9.js"
     ]
   },
   "_preload-helper-ug3pwPZ1.js": {
@@ -104,8 +104,8 @@
       "_web-mN2KxWEl.js"
     ]
   },
-  "_templateStore-LDP1F54B.js": {
-    "file": "assets/templateStore-LDP1F54B.js",
+  "_templateStore-BRijiVw5.js": {
+    "file": "assets/templateStore-BRijiVw5.js",
     "name": "templateStore",
     "imports": [
       "_store-BNroEFDV.js",
@@ -142,12 +142,12 @@
     "isDynamicEntry": true
   },
   "src/lib/api/templates.ts": {
-    "file": "assets/templates-LBMqgP8d.js",
+    "file": "assets/templates-cljlMuna.js",
     "name": "templates",
     "src": "src/lib/api/templates.ts",
     "isDynamicEntry": true,
     "imports": [
-      "_client-D8T4IjhQ.js"
+      "_client-BEX14on9.js"
     ]
   },
   "src/routes/dashboard/analytics.tsx?pick=default&pick=$css": {
@@ -259,7 +259,7 @@
     ]
   },
   "src/routes/dashboard/products/[id].tsx?pick=default&pick=$css": {
-    "file": "assets/_id_-BYehx88Z.js",
+    "file": "assets/_id_-D-Sz99dx.js",
     "name": "_id_",
     "src": "src/routes/dashboard/products/[id].tsx?pick=default&pick=$css",
     "isEntry": true,
@@ -267,28 +267,28 @@
     "imports": [
       "_preload-helper-ug3pwPZ1.js",
       "_web-mN2KxWEl.js",
-      "_mockupStore-B00iTYtE.js",
+      "_mockupStore-DXdbV29y.js",
       "_routing-B87cVCyJ.js",
       "_store-BNroEFDV.js",
-      "_client-D8T4IjhQ.js"
+      "_client-BEX14on9.js"
     ],
     "dynamicImports": [
       "src/lib/api/brands.ts",
       "src/lib/api/templates.ts",
-      "_mockupStore-B00iTYtE.js"
+      "_mockupStore-DXdbV29y.js"
     ]
   },
   "src/routes/dashboard/products/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-jUIDdaJo.js",
+    "file": "assets/index-BSM3y1i4.js",
     "name": "index",
     "src": "src/routes/dashboard/products/index.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_web-mN2KxWEl.js",
-      "_mockupStore-B00iTYtE.js",
+      "_mockupStore-DXdbV29y.js",
       "_store-BNroEFDV.js",
-      "_client-D8T4IjhQ.js"
+      "_client-BEX14on9.js"
     ]
   },
   "src/routes/dashboard/settings/billing.tsx?pick=default&pick=$css": {
@@ -327,7 +327,7 @@
     ]
   },
   "src/routes/dashboard/templates/[id].tsx?pick=default&pick=$css": {
-    "file": "assets/_id_-B23SXld-.js",
+    "file": "assets/_id_-BYty0Ghv.js",
     "name": "_id_",
     "src": "src/routes/dashboard/templates/[id].tsx?pick=default&pick=$css",
     "isEntry": true,
@@ -335,11 +335,11 @@
     "imports": [
       "_preload-helper-ug3pwPZ1.js",
       "_web-mN2KxWEl.js",
-      "_templateStore-LDP1F54B.js",
+      "_templateStore-BRijiVw5.js",
       "_routing-B87cVCyJ.js",
       "_store-BNroEFDV.js",
       "src/lib/api/templates.ts",
-      "_client-D8T4IjhQ.js"
+      "_client-BEX14on9.js"
     ],
     "dynamicImports": [
       "src/lib/api/templates.ts",
@@ -347,17 +347,17 @@
     ]
   },
   "src/routes/dashboard/templates/index.tsx?pick=default&pick=$css": {
-    "file": "assets/index-CuOjXPa5.js",
+    "file": "assets/index-BqLE_EY8.js",
     "name": "index",
     "src": "src/routes/dashboard/templates/index.tsx?pick=default&pick=$css",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_web-mN2KxWEl.js",
-      "_templateStore-LDP1F54B.js",
+      "_templateStore-BRijiVw5.js",
       "_store-BNroEFDV.js",
       "src/lib/api/templates.ts",
-      "_client-D8T4IjhQ.js"
+      "_client-BEX14on9.js"
     ]
   },
   "src/routes/index.tsx?pick=default&pick=$css": {
@@ -420,7 +420,7 @@
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-BuovnGFb.js",
+    "file": "assets/client-C6h_BHkL.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,

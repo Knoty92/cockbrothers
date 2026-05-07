@@ -45,6 +45,15 @@ async function request<T>(endpoint: string, options: RequestOptions = {}): Promi
 
   // Parse JSON
   if (response.status === 204) return undefined as T;
+  const contentType = response.headers.get('content-type') || '';
+  if (!contentType.includes('application/json')) {
+    throw new ApiClientError(
+      'SERVICE_UNAVAILABLE',
+      'Service currently unavailable. Please try again later.',
+      {},
+      response.status,
+    );
+  }
   return response.json();
 }
 
