@@ -1,0 +1,68 @@
+{
+  "src/routes/api/integrations/printful/connect.ts?pick=GET": {
+    "file": "connect.js",
+    "name": "connect",
+    "src": "src/routes/api/integrations/printful/connect.ts?pick=GET",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "src/routes/api/integrations/printful/connect.ts?pick=POST": {
+    "file": "connect2.js",
+    "name": "connect",
+    "src": "src/routes/api/integrations/printful/connect.ts?pick=POST",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "src/routes/api/integrations/printify/connect.ts?pick=GET": {
+    "file": "connect3.js",
+    "name": "connect",
+    "src": "src/routes/api/integrations/printify/connect.ts?pick=GET",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "src/routes/api/integrations/printify/connect.ts?pick=POST": {
+    "file": "connect4.js",
+    "name": "connect",
+    "src": "src/routes/api/integrations/printify/connect.ts?pick=POST",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "src/routes/api/payments/subscribe.ts?pick=POST": {
+    "file": "subscribe.js",
+    "name": "subscribe",
+    "src": "src/routes/api/payments/subscribe.ts?pick=POST",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "src/routes/api/payments/webhook.ts?pick=POST": {
+    "file": "webhook.js",
+    "name": "webhook",
+    "src": "src/routes/api/payments/webhook.ts?pick=POST",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "virtual:$vinxi/handler/ssr": {
+    "file": "ssr.js",
+    "name": "ssr",
+    "src": "virtual:$vinxi/handler/ssr",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/routes/api/integrations/printful/connect.ts?pick=GET",
+      "src/routes/api/integrations/printful/connect.ts?pick=GET",
+      "src/routes/api/integrations/printful/connect.ts?pick=GET",
+      "src/routes/api/integrations/printful/connect.ts?pick=GET",
+      "src/routes/api/integrations/printful/connect.ts?pick=POST",
+      "src/routes/api/integrations/printful/connect.ts?pick=POST",
+      "src/routes/api/integrations/printify/connect.ts?pick=GET",
+      "src/routes/api/integrations/printify/connect.ts?pick=GET",
+      "src/routes/api/integrations/printify/connect.ts?pick=GET",
+      "src/routes/api/integrations/printify/connect.ts?pick=GET",
+      "src/routes/api/integrations/printify/connect.ts?pick=POST",
+      "src/routes/api/integrations/printify/connect.ts?pick=POST",
+      "src/routes/api/payments/subscribe.ts?pick=POST",
+      "src/routes/api/payments/subscribe.ts?pick=POST",
+      "src/routes/api/payments/webhook.ts?pick=POST",
+      "src/routes/api/payments/webhook.ts?pick=POST"
+    ]
+  }
+}

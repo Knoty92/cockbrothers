@@ -1,0 +1,13 @@
+const n = "https://oauth.printify.com/oauth/authorize";
+async function o(t) {
+  var _a;
+  try {
+    const s = new URL(t.request.url), r = (_a = process.env.PRINTIFY_CLIENT_ID) != null ? _a : "", a = crypto.randomUUID(), e = new URL(n);
+    return e.searchParams.set("client_id", r), e.searchParams.set("redirect_uri", `${s.origin}/api/integrations/printify/callback`), e.searchParams.set("response_type", "code"), e.searchParams.set("state", a), e.searchParams.set("scope", "stores:read"), Response.json({ data: { authUrl: e.toString() } });
+  } catch (s) {
+    return Response.json({ error: { code: "CONNECT_FAILED", message: s.message } }, { status: 500 });
+  }
+}
+
+export { o as POST };
+//# sourceMappingURL=connect42.mjs.map

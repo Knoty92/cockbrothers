@@ -2,7 +2,6 @@
  * Brand API calls – server functions for Vinxi.
  * These are called on the client but executed on the server via Vinxi's server$ functions.
  */
-import { server$ } from 'solid-js/server';
 import type {
   Brand,
   CreateBrandInput,
@@ -125,28 +124,35 @@ export async function exportBrand(id: string): Promise<Blob> {
 // ---------------------------------------------------------------------------
 
 /**
- * Upload a logo image to Supabase Storage.
- * This runs on the server to handle multipart / storage integration.
+ * Upload a logo image to the server.
+ * This sends a FormData with the file to the server API endpoint.
  */
-export const uploadLogo = server$(async (fileBuffer: ArrayBuffer, fileName: string, brandId: string): Promise<string> => {
-  // In production this would upload to Supabase Storage
-  // and return the public URL.
-  // For MVP we simulate it.
-  const blob = new Blob([fileBuffer]);
-  const url = URL.createObjectURL(blob);
+export async function uploadLogo(
+  file: File,
+  brandId: string,
+): Promise<string> {
+  const formData = new FormData();
+  formData.append('file', file);
+  formData.append('brandId', brandId);
 
-  // TODO: Replace with Supabase Storage upload
-  // const { data, error } = await supabase.storage
-  //   .from('brand-logos')
-  //   .upload(`${brandId}/${fileName}`, blob);
+  const res = await fetch(`${BASE}/${brandId}/logo`, {
+    method: 'POST',
+    body: formData,
+  });
 
-  return url;
-});
+  if (!res.ok) {
+    const body = await res.json().catch(() => ({}));
+    throw new Error(body?.error?.message ?? 'Logo upload failed');
+  }
+
+  const json = await res.json();
+  return json.data.url as string;
+}
 
 /**
- * Validate brand data on the server before saving.
+ * Validate brand data before saving.
  */
-export const validateBrandData = server$(async (data: CreateBrandInput): Promise<{ valid: boolean; errors: string[] }> => {
+export function validateBrandData(data: CreateBrandInput): { valid: boolean; errors: string[] } {
   const errors: string[] = [];
 
   if (!data.name || data.name.trim().length < 1) {
@@ -163,4 +169,4 @@ export const validateBrandData = server$(async (data: CreateBrandInput): Promise
   }
 
   return { valid: errors.length === 0, errors };
-});
+}

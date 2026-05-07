@@ -1,0 +1,88 @@
+{
+  "_server-fns-0nXnM13H.js": {
+    "file": "assets/server-fns-0nXnM13H.js",
+    "name": "server-fns",
+    "dynamicImports": [
+      "src/routes/api/integrations/printful/connect.ts?pick=GET",
+      "src/routes/api/integrations/printful/connect.ts?pick=GET",
+      "src/routes/api/integrations/printful/connect.ts?pick=GET",
+      "src/routes/api/integrations/printful/connect.ts?pick=GET",
+      "src/routes/api/integrations/printful/connect.ts?pick=POST",
+      "src/routes/api/integrations/printful/connect.ts?pick=POST",
+      "src/routes/api/integrations/printify/connect.ts?pick=GET",
+      "src/routes/api/integrations/printify/connect.ts?pick=GET",
+      "src/routes/api/integrations/printify/connect.ts?pick=GET",
+      "src/routes/api/integrations/printify/connect.ts?pick=GET",
+      "src/routes/api/integrations/printify/connect.ts?pick=POST",
+      "src/routes/api/integrations/printify/connect.ts?pick=POST",
+      "src/routes/api/payments/subscribe.ts?pick=POST",
+      "src/routes/api/payments/subscribe.ts?pick=POST",
+      "src/routes/api/payments/webhook.ts?pick=POST",
+      "src/routes/api/payments/webhook.ts?pick=POST",
+      "src/app.tsx"
+    ]
+  },
+  "src/app.tsx": {
+    "file": "assets/app-BvOtGpCX.js",
+    "name": "app",
+    "src": "src/app.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-fns-0nXnM13H.js"
+    ],
+    "css": [
+      "assets/app-Bd3Yeva5.css"
+    ]
+  },
+  "src/routes/api/integrations/printful/connect.ts?pick=GET": {
+    "file": "connect.js",
+    "name": "connect",
+    "src": "src/routes/api/integrations/printful/connect.ts?pick=GET",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "src/routes/api/integrations/printful/connect.ts?pick=POST": {
+    "file": "connect2.js",
+    "name": "connect",
+    "src": "src/routes/api/integrations/printful/connect.ts?pick=POST",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "src/routes/api/integrations/printify/connect.ts?pick=GET": {
+    "file": "connect3.js",
+    "name": "connect",
+    "src": "src/routes/api/integrations/printify/connect.ts?pick=GET",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "src/routes/api/integrations/printify/connect.ts?pick=POST": {
+    "file": "connect4.js",
+    "name": "connect",
+    "src": "src/routes/api/integrations/printify/connect.ts?pick=POST",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "src/routes/api/payments/subscribe.ts?pick=POST": {
+    "file": "subscribe.js",
+    "name": "subscribe",
+    "src": "src/routes/api/payments/subscribe.ts?pick=POST",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "src/routes/api/payments/webhook.ts?pick=POST": {
+    "file": "webhook.js",
+    "name": "webhook",
+    "src": "src/routes/api/payments/webhook.ts?pick=POST",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "virtual:$vinxi/handler/server-fns": {
+    "file": "server-fns.js",
+    "name": "server-fns",
+    "src": "virtual:$vinxi/handler/server-fns",
+    "isEntry": true,
+    "imports": [
+      "_server-fns-0nXnM13H.js"
+    ]
+  }
+}
