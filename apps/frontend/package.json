@@ -4,16 +4,30 @@
   "scripts": {
     "dev": "vinxi dev",
     "build": "vinxi build",
-    "start": "vinxi start"
+    "start": "vinxi start",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@solidjs/router": "^0.16.1",
     "@solidjs/start": "^1.1.0",
+    "@supabase/supabase-js": "^2.49.4",
+    "@resvg/resvg-js": "^2.6.2",
+    "drizzle-orm": "^0.41.0",
+    "inngest": "^3.35.0",
+    "postgres": "^3.4.5",
+    "sharp": "^0.34.1",
     "solid-js": "^1.9.5",
-    "vinxi": "^0.5.3"
+    "stripe": "^18.0.0",
+    "vinxi": "^0.5.3",
+    "zod": "^3.24.3"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.2.2",
+    "drizzle-kit": "^0.30.6",
     "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3"
   }

@@ -1,0 +1,179 @@
+import { type Component, For, Show, createSignal } from 'solid-js';
+import { TemplateCard } from './TemplateCard';
+import type { Template, ProductType } from '~/lib/types';
+
+interface TemplateGridProps {
+  templates: () => Template[];
+  loading: () => boolean;
+  error: () => string | null;
+  selectedId?: () => string | null;
+  searchQuery: string;
+  productTypeFilter: ProductType | null;
+  onSearch: (query: string) => void;
+  onProductTypeFilter: (type: ProductType | null) => void;
+  onSelect?: (id: string) => void;
+  onEdit?: (id: string) => void;
+  onDelete?: (id: string) => void;
+  onNewTemplate?: () => void;
+}
+
+const productTypes: { value: ProductType; label: string }[] = [
+  { value: 'tshirt', label: 'T-shirts' },
+  { value: 'hoodie', label: 'Hoodies' },
+  { value: 'sweatshirt', label: 'Sweatshirts' },
+  { value: 'mug', label: 'Mugs' },
+  { value: 'poster', label: 'Posters' },
+  { value: 'canvas', label: 'Canvas' },
+  { value: 'tote_bag', label: 'Tote Bags' },
+  { value: 'phone_case', label: 'Phone Cases' },
+  { value: 'hat', label: 'Hats' },
+  { value: 'sticker', label: 'Stickers' },
+  { value: 'pillow', label: 'Pillows' },
+];
+
+export const TemplateGrid: Component<TemplateGridProps> = (props) => {
+  const [showFilters, setShowFilters] = createSignal(false);
+
+  return (
+    <div class="space-y-6">
+      {/* Search & Filters bar */}
+      <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
+        <div class="flex-1 w-full sm:max-w-md">
+          <div class="relative">
+            <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input
+              type="text"
+              placeholder="Search templates..."
+              value={props.searchQuery}
+              onInput={(e) => props.onSearch(e.currentTarget.value)}
+              class="w-full pl-10 pr-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+            />
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button
+            onClick={() => setShowFilters(!showFilters())}
+            class={`inline-flex items-center gap-1.5 px-3 py-2 rounded-lg border text-sm font-medium transition-colors ${
+              showFilters()
+                ? 'border-indigo-300 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300'
+                : 'border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
+            }`}
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+            </svg>
+            Filters
+          </button>
+
+          <button
+            onClick={props.onNewTemplate}
+            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-indigo-600 text-white text-sm font-medium hover:bg-indigo-700 transition-colors"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            </svg>
+            New Template
+          </button>
+        </div>
+      </div>
+
+      {/* Product Type filters */}
+      <Show when={showFilters()}>
+        <div class="flex flex-wrap gap-2">
+          <button
+            onClick={() => props.onProductTypeFilter(null)}
+            class={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
+              props.productTypeFilter === null
+                ? 'bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300'
+                : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
+            }`}
+          >
+            All
+          </button>
+          <For each={productTypes}>
+            {(type) => (
+              <button
+                onClick={() => props.onProductTypeFilter(
+                  props.productTypeFilter === type.value ? null : type.value
+                )}
+                class={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
+                  props.productTypeFilter === type.value
+                    ? 'bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300'
+                    : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
+                }`}
+              >
+                {type.label}
+              </button>
+            )}
+          </For>
+        </div>
+      </Show>
+
+      {/* Loading */}
+      <Show when={props.loading()}>
+        <div class="flex justify-center py-12">
+          <div class="flex items-center gap-3 text-gray-500 dark:text-gray-400">
+            <svg class="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+            </svg>
+            <span class="text-sm">Loading templates...</span>
+          </div>
+        </div>
+      </Show>
+
+      {/* Error */}
+      <Show when={props.error()}>
+        <div class="rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 p-4">
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-red-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <p class="text-sm text-red-700 dark:text-red-300">{props.error()}</p>
+          </div>
+        </div>
+      </Show>
+
+      {/* Grid */}
+      <Show
+        when={!props.loading()}
+        fallback={null}
+      >
+        <Show
+          when={props.templates().length > 0}
+          fallback={
+            <div class="text-center py-16">
+              <svg class="mx-auto w-16 h-16 text-gray-300 dark:text-gray-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100 mb-1">No templates found</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                {props.searchQuery || props.productTypeFilter
+                  ? 'Try adjusting your search or filters.'
+                  : 'Create your first template to get started.'}
+              </p>
+            </div>
+          }
+        >
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            <For each={props.templates()}>
+              {(template) => (
+                <TemplateCard
+                  template={template}
+                  selected={props.selectedId?.() === template.id}
+                  onSelect={props.onSelect}
+                  onEdit={props.onEdit}
+                  onDelete={props.onDelete}
+                />
+              )}
+            </For>
+          </div>
+        </Show>
+      </Show>
+    </div>
+  );
+};
