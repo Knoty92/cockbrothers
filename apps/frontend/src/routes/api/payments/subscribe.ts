@@ -7,7 +7,6 @@
  * In production, this uses the Stripe SDK server-side.
  */
 
-import { json } from '@solidjs/start/server';
 import type { APIEvent } from '@solidjs/start/server';
 
 interface SubscribeBody {
@@ -21,7 +20,7 @@ export async function POST(event: APIEvent) {
     // Get current user from session
     // const session = await getSession(event.request);
     // if (!session) {
-    //   return json({ error: { code: 'UNAUTHORIZED', message: 'Not authenticated' } }, { status: 401 });
+    //   return Response.json({ error: { code: 'UNAUTHORIZED', message: 'Not authenticated' } }, { status: 401 });
     // }
 
     // Parse request body
@@ -29,7 +28,7 @@ export async function POST(event: APIEvent) {
     const { priceId } = body;
 
     if (!priceId) {
-      return json(
+      return Response.json(
         { error: { code: 'INVALID_PARAMS', message: 'priceId is required' } },
         { status: 400 },
       );
@@ -70,14 +69,14 @@ export async function POST(event: APIEvent) {
     const origin = new URL(event.request.url).origin;
 
     // Stub response for development
-    return json({
+    return Response.json({
       data: {
         url: `${origin}/dashboard/settings/billing?checkout=stub&price=${priceId}`,
         sessionId: `cs_stub_${crypto.randomUUID()}`,
       },
     });
   } catch (err) {
-    return json(
+    return Response.json(
       { error: { code: 'SUBSCRIPTION_FAILED', message: (err as Error).message } },
       { status: 500 },
     );

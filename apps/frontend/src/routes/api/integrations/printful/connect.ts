@@ -11,7 +11,6 @@
  * 3. Store encrypted key in DB
  */
 
-import { json } from '@solidjs/start/server';
 import type { APIEvent } from '@solidjs/start/server';
 
 const PRINTFUL_OAUTH_URL = 'https://www.printful.com/oauth/authorize';
@@ -36,11 +35,11 @@ export async function POST(event: APIEvent) {
     // Store state in session for CSRF verification
     // In production: await kv.set(`oauth_state:${state}`, { redirect }, { ex: 300 });
 
-    return json({
+    return Response.json({
       data: { authUrl: authUrl.toString() },
     });
   } catch (err) {
-    return json(
+    return Response.json(
       { error: { code: 'CONNECT_FAILED', message: (err as Error).message } },
       { status: 500 },
     );
@@ -58,14 +57,14 @@ export async function GET(event: APIEvent) {
   const error = url.searchParams.get('error');
 
   if (error) {
-    return json(
+    return Response.json(
       { error: { code: 'OAUTH_ERROR', message: `Printful denied: ${error}` } },
       { status: 400 },
     );
   }
 
   if (!code || !state) {
-    return json(
+    return Response.json(
       { error: { code: 'INVALID_PARAMS', message: 'Missing code or state' } },
       { status: 400 },
     );
@@ -106,7 +105,7 @@ export async function GET(event: APIEvent) {
       headers: { Location: redirect },
     });
   } catch (err) {
-    return json(
+    return Response.json(
       { error: { code: 'TOKEN_EXCHANGE_FAILED', message: (err as Error).message } },
       { status: 500 },
     );

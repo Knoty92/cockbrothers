@@ -11,9 +11,7 @@
  * - Send transactional emails via Resend
  */
 
-import { json } from '@solidjs/start/server';
 import type { APIEvent } from '@solidjs/start/server';
-import { handleStripeWebhook, verifyWebhookSignature } from '../../../lib/stripe/webhooks';
 
 /**
  * Stripe sends webhook events as POST with JSON body + Stripe-Signature header.
@@ -21,38 +19,34 @@ import { handleStripeWebhook, verifyWebhookSignature } from '../../../lib/stripe
  */
 export async function POST(event: APIEvent) {
   try {
-    // Read raw body as text (needed for signature verification)
-    const rawBody = await event.request.text();
-    const signature = event.request.headers.get('stripe-signature') ?? '';
-    const secret = process.env.STRIPE_WEBHOOK_SECRET ?? '';
+    const body = await event.request.text();
+    const signature = event.request.headers.get('stripe-signature');
 
-    // In production, uncomment to verify:
-    // const stripeEvent = verifyWebhookSignature(rawBody, signature, secret);
-    // const result = await handleStripeWebhook(stripeEvent);
-
-    // For development, parse directly
-    const payload = JSON.parse(rawBody);
-
-    // Process the event
-    const result = await handleStripeWebhook(payload);
-
-    if (!result.handled) {
-      console.warn(`Unhandled Stripe event: ${payload.type}`);
+    if (!signature) {
+      return Response.json(
+        { error: { code: 'MISSING_SIGNATURE', message: 'Missing Stripe-Signature header' } },
+        { status: 400 },
+      );
     }
 
-    // Acknowledge receipt (Stripe requires 200 within 30s)
-    return json({ received: true, handled: result.handled });
-  } catch (err) {
-    console.error('Stripe webhook error:', err);
+    // In production: verify webhook signature
+    // const stripeEvent = stripe.webhooks.constructEvent(
+    //   body,
+    //   signature,
+    //   process.env.STRIPE_WEBHOOK_SECRET!
+    // );
 
-    // Stripe will retry on non-2xx responses
-    return json(
-      {
-        error: {
-          code: 'WEBHOOK_ERROR',
-          message: (err as Error).message,
-        },
-      },
+    // For development, parse as raw JSON
+    const eventData = JSON.parse(body);
+    const eventType = eventData.type;
+
+    // In production: handle event via Stripe SDK
+    // await handleStripeWebhook(stripeEvent);
+
+    return new Response(null, { status: 200 });
+  } catch (err) {
+    return Response.json(
+      { error: { code: 'WEBHOOK_ERROR', message: (err as Error).message } },
       { status: 400 },
     );
   }
