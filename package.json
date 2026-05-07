@@ -1,0 +1,8 @@
+{
+  "name": "cockbrothers",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*"
+  ]
+}
